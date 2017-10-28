@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="1.0" client="site">
+	<name>MyPuzzle Find The Pair</name>
+	<author>Mypuzzle.org</author>
+	<creationDate>2013 February 03</creationDate>
+	<copyright>Copyright (C) 2013. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>tom@mypuzzle.org</authorEmail>
+	<authorUrl>www.mypuzzle.org</authorUrl>
+	<version>2.0.0</version>
+	<description>Fast and easy integration of find the pair memory games puzzles into your joomla website. Now also for Joomla 3!</description>
+	<files>
+            <filename module="mod_mp_ftpair">mod_mp_ftpair.php</filename>
+            <folder>css</folder>
+            <folder>gallery</folder>
+            <folder>js</folder>
+            <filename>index.html</filename>
+	</files>
+	<config>
+	  <fields name="params">
+	    <fieldset name="basic" label="Find The Pair Puzzle Parameters" description="MyPuzzle Find The Pair Settings">
+		    <field name="width" type="text" default="300" label="Puzzle width in px. 300 is the default.">
+                    </field>
+		    <field name="height" type="text" default="300" label="Puzzle height in px. 300 is the default.">
+                    </field>
+		    <field name="pairs" type="list" default="8" label="Configures the complexity and amount of overall pairs.">
+                            <option value="6">6 Pairs</option>
+                            <option value="8">8 Pairs</option>
+                            <option value="10">10 Pairs</option>
+                            <option value="12">12 Pairs</option>
+                            <option value="13">13 Pairs</option>
+                            <option value="15">15 Pairs</option>
+                            <option value="18">18 Pairs</option>
+                            <option value="21">21 Pairs</option>
+                    </field>
+                    <field name="bgcolor" type="color" default="#FFFFFF" label="The primary background-color."></field>
+                    <field name="cardcolor" type="color" default="#FEC" label="The primary background-color of each card."></field>
+                    <field name="cardbordercolor" type="color" default="#F96" label="The border color of each card."></field>
+                    <field name="gallery" type="text" default="modules/mod_mp_ftpair/gallery" size="60" label="Image gallery Path"></field>
+	    </fieldset>
+	  </fields>
+	</config>
+</extension>

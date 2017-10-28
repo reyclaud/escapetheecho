@@ -1,0 +1,3 @@
+div.formBody{
+    float: none;
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+	<name>InstantFbLogin</name>
+	<author>Joomla! Extensions Store</author>
+	<creationDate>April 2017</creationDate>
+	<copyright>Copyright (C) 2015 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@storejextensions.org</authorEmail>
+	<authorUrl>http://storejextensions.org</authorUrl>
+	<version>2.2.3</version>
+	<description>COM_INSTANTFBLOGIN_INSTALLATION_MESSAGES</description>
+	
+	<scriptfile>installscript.php</scriptfile>
+	
+	<install> <!-- Runs on install -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install.mysql.utf8.sql</file>
+		</sql>
+	</install> 
+	<uninstall> <!-- Runs on uninstall -->
+		<sql>
+			<file driver="mysql" charset="utf8">sql/uninstall.mysql.utf8.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- FRONTEND -->
+	<files folder="site">
+		<!-- JS -->
+		<folder>js</folder>
+		<!-- CSS -->
+		<folder>css</folder>
+		<!-- LANGUAGE -->
+		<folder>language</folder>
+		<!-- HELPERS -->
+		<folder>helpers</folder>
+	</files>
+ 
+	<!-- BACKEND -->
+	<administration>
+		<menu link="option=com_instantfblogin" img="components/com_instantfblogin/images/instantfblogin-16x16.png">INSTANTFBLOGIN</menu>
+		<files folder="admin">
+			<filename>instantfblogin.php</filename> 
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<!-- CONTROLLERS -->
+			<folder>controllers</folder> 
+			<!-- CSS -->
+			<folder>css</folder> 
+			<!-- FRAMEWORK -->
+			<folder>framework</folder> 
+			<!-- IMAGES -->
+			<folder>images</folder>  
+			<!-- JS -->
+			<folder>js</folder>
+			<!-- LANGUAGE -->
+			<folder>language</folder>
+			<!-- MODEL -->
+			<folder>models</folder>
+			<!-- SQL files section -->
+			<folder>sql</folder> 
+			<!-- TABLES -->
+			<folder>tables</folder>
+			<!-- VIEWS -->
+			<folder>views</folder>  
+		</files>  
+	</administration>
+	
+	<!-- UPDATE SERVERS -->
+	<updateservers>
+		<server type="extension" priority="1" name="Instant Facebook Login Update Server">http://storejextensions.org/updates/instantfblogin_updater.xml</server>
+	</updateservers>
+</extension>

@@ -1,0 +1,147 @@
+<?php
+defined('_JEXEC') or die;
+function src_4291fc19c1cf4635fd6a7387c8968707($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+  
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query3 = $db->getQuery(true); 
+
+ 
+$query3->select('*'); 
+
+ 
+$query3->from($db->quoteName('jos_users')); 
+
+ 
+$query3->where($db->quoteName('id') ." = ". "'".$user->id."'"); 
+
+ 
+$db->setQuery($query3,0,1); 
+
+ 
+  
+
+ 
+$result3 = $db->loadObject(); 
+
+ 
+echo "<br>"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "<h4 class='pd-holder'>Player Name: </h4>" <span class='pd-user'>.$result3->name;</span> 
+
+ 
+echo "<br>"; 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions','a')); 
+
+ 
+$query->where($db->quoteName('a.UserId') ." = ". "'".$user->id."'"); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObject(); 
+
+ 
+  
+
+ 
+$query2 = $db->getQuery(true); 
+
+ 
+$query2->select('*'); 
+
+ 
+$query2->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$query2->where($db->quoteName('FormId') ." = ". "'". $result->FormId."'"); 
+
+ 
+$query2->where($db->quoteName('SubmissionId') ." = ". $result->SubmissionId); 
+
+ 
+$db->setQuery($query2); 
+
+ 
+$result2 = $db->loadObjectList(); 
+
+ 
+echo "<div class='pd-holder'> 
+
+ 
+<h1>Quizzes Taken</h1> 
+
+ 
+<br> 
+
+ 
+<table class='personal-data' style='width: 100%;'> 
+
+ 
+<tbody> 
+
+ 
+<tr> 
+
+ 
+<td><strong>Questions</strong></td> 
+
+ 
+<td><strong>Answers</strong></td> 
+
+ 
+</tr>"; 
+
+ 
+ foreach($result2 as $value2){ 
+
+ 
+echo"<tr><td>"; 
+
+ 
+echo $value2->FieldName; 
+
+ 
+echo"</td> <td>"; 
+
+ 
+echo $value2->FieldValue; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+ } 
+
+ 
+  
+
+ 
+echo "</tbody> </table> </div>";
+;return get_defined_vars();
+;}

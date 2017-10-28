@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="plugin" group="content" method="upgrade">
+    <name>Content - Instant Facebook Login Share</name>
+    <author>Joomla! Extensions Store</author>
+	<creationDate>April 2017</creationDate>
+	<copyright>Copyright (C) 2013 - Joomla! Extensions Store. All Rights Reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>info@storejextensions.org</authorEmail>
+	<authorUrl>http://storejextensions.org</authorUrl>
+	<version>2.2.3</version>
+    <description>Instant Facebook Login Social Share</description>
+    	<files>
+		<filename plugin="instantfbloginshare">instantfbloginshare.php</filename>
+		<folder>style</folder>
+		<filename>index.html</filename>
+	</files>
+</extension>

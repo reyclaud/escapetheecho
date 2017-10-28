@@ -1,0 +1,318 @@
+<?php
+defined('_JEXEC') or die;
+function src_a549ae9a4cb755b5d8998679ed499a52($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+ //COUNT ANSWER #1 
+
+ 
+$count2 = $db->getQuery(true); 
+
+ 
+$count2->select('COUNT(*)'); 
+
+ 
+$count2->from($db->quoteName('jos_rsform_submission_values'));  
+
+ 
+$count2->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count2->where($db->quoteName('FormId') ." = ". '61');  
+
+ 
+$count2->where($db->quoteName('FieldValue') ." LIKE ". "'%". "only chase power to steal from us" ."%'");  
+
+ 
+$db->setQuery($count2); 
+
+ 
+$count_result1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count1 = $db->getQuery(true); 
+
+ 
+$count1->select('COUNT(*)'); 
+
+ 
+$count1->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count1->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count1->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count1->where($db->quoteName('FieldValue') ." LIKE ". "'%". "are unfairly abused because they all try their hardest at an impossible job" ."%'"); 
+
+ 
+$db->setQuery($count1); 
+
+ 
+$count_result2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count3 = $db->getQuery(true); 
+
+ 
+$count3->select('COUNT(*)'); 
+
+ 
+$count3->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count3->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count3->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count3->where($db->quoteName('FieldValue') ." LIKE ". "'%". "get into politics with good intention but are corrupted by the system" ."%'"); 
+
+ 
+$db->setQuery($count3); 
+
+ 
+$count_result3= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count4 = $db->getQuery(true); 
+
+ 
+$count4->select('COUNT(*)'); 
+
+ 
+$count4->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count4->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count4->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count4->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($count4); 
+
+ 
+$count_result4= $db->loadResult(); 
+
+ 
+  
+
+ 
+  //COUNT ANSWER #2 
+
+ 
+$q2 = $db->getQuery(true); 
+
+ 
+$q2->select('COUNT(*)'); 
+
+ 
+$q2->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q2->where($db->quoteName('FieldName') ."=". "'"."Q1"."'"); 
+
+ 
+$q2->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q2->where($db->quoteName('FieldValue') ." LIKE ". "'%". "not at all" ."%'"); 
+
+ 
+$db->setQuery($q2); 
+
+ 
+$q2_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+echo "<br>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'>"; 
+
+ 
+  
+
+ 
+echo "<h4 style='display:inline;'>Quiz Title: </h4> Power & Politics"; 
+
+ 
+  
+
+ 
+echo "</div>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'> 
+
+ 
+  
+
+ 
+<br> 
+
+ 
+  
+
+ 
+<h1>Quizzes Taken</h1> 
+
+ 
+  
+
+ 
+<br>  
+
+ 
+  
+
+ 
+<table class='personal-data' style='width: 100%;'> 
+
+ 
+  
+
+ 
+<tbody> 
+
+ 
+  
+
+ 
+<tr> 
+
+ 
+  
+
+ 
+<td><strong>Questions</strong></td> 
+
+ 
+  
+
+ 
+<td><strong>Answers</strong></td> 
+
+ 
+  
+
+ 
+</tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>1.) Politicians</td> 
+
+ 
+<td>A. only chase power to steal from us - "; 
+
+ 
+ echo "(".$count_result1 . ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. are unfairly abused because they all try their hardest at an impossible job - "; 
+
+ 
+echo "(".$count_result2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. get into politics with good intention but are corrupted by the system - "; 
+
+ 
+echo "(".$count_result3 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$count_result4 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td> </td>"; 
+
+ 
+echo "<td>;  
+
+ 
+echo "A. Not at all - "; 
+
+ 
+echo "(".$q2_choice1 . ") counts";  
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "</tbody> </table> </div>";
+;return get_defined_vars();
+;}

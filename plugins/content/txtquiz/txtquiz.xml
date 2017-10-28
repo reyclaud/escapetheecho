@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.4" type="plugin" group="content" method="upgrade">
+	<name>Content - txtQuiz</name>
+	<author>Kevin Olson</author>
+	<creationDate>July 2015</creationDate>
+	<copyright>Copyright (C) 2015 txtLearn.com All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>kevin@txtlearn.com</authorEmail>
+	<authorUrl>www.txtlearn.com</authorUrl>
+	<version>1.22.1</version>
+	<description><![CDATA[
+                 <h1>txtQuiz by WebDev.txtLearn.com</h1>
+                 <p>txtQuiz is a content plugin which enables you to add review quizzes to your content articles using a simple syntax.</p>
+                 <p>If you like my extension please consider donating! This extension took approx. 100 hours of work to complete and development is still ongoing!</p> <h1><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=HBS5WR75P2TLY" target="_blank"> Donate Five Dollars</a></h1>
+                 <h3><a href="http://webdev.txtlearn.com/index.php/extensions/plugins/txtquiz" target="_blank">View Documentation</a></h2>
+                 <h3><a href="http://webdev.txtlearn.com/index.php/forum/txtquiz" target="_blank">Support Forums</a></h3>
+                 <p>You may also want to consider leaving a <a href="http://extensions.joomla.org/extensions/extension/living/education-a-culture/txtquiz" target="_blank"> positive review in the JED</a> if you can't afford to donate. :)</p>
+                 <h4>Sample Multiple Choice Question</h4>
+                 <p>To create a multiple choice question you must specify the question, the answers and the correct answer. The correct value should be a number indicating which answer is correct (starting with 0 for the first answer, 1 for the second, etc.).
+                 <pre>{txtquiz question="What is one plus one?" type="mchoice" answers="one, two, three, four" correct="1"} Your Additional Content {/txtquiz}</pre>
+                 <h4>Sample Text Question</h4>
+                 <pre>{txtquiz question="What is one plus one?" type="text" correct="2,two"} Your Additional Content {/txtquiz}</pre>
+                 <p>When creating text questions you can add multiple correct answers by separating by commas.</p>
+                 <h4>Pass/Fail Reply<h4>
+                 <p>You can use pass replys and fail replys to give feedback to your users about your questions. Add passreply="Passing text" or failreply="Failing text" to any question.</p>
+                 <h4>Score Box</h4>
+                 <p>Create a scorebox using the following syntax:</p>
+                 <pre>{txtqscorebox passpercent="60"}</pre>
+                 <p>The pass percentage is the percentage of points needed to be correct to pass the test. If you are using a scorebox you may add a points="#" attribute to the questions to specify how much each individual question is worth.</p>
+                 ]]></description>
+	<files>
+		<filename plugin="txtquiz">txtquiz.php</filename>
+		<filename>txtquiz.js</filename>
+		<folder>images</folder>
+		<folder>style</folder>
+	</files>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_txtquiz.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_content_txtquiz.sys.ini</language>
+	</languages>
+
+	<updateservers>
+		<server type="extension" priority="1" name="txtQuiz">
+			http://www.txtlearn.com/extensionupdates/txtquiz-update.xml
+		</server>
+	</updateservers>
+	
+	<config>
+		<fields name="params">
+ 
+			<fieldset name="basic">
+				<field name="disp_numbers" type="combo"
+					default="Yes"
+					description="PLG_TXTQUIZ_DISPNUMSDESC"
+					label="PLG_TXTQUIZ_DISPNUMS"
+				>
+					<option value="yes">Yes</option>
+					<option value="no">No</option>
+				</field>
+
+				<field name="style"
+						type="filelist"
+						label="Main Style CSS"
+						description="Select a css style for txtQuiz"
+						default="material_white.css"
+						directory="plugins/content/txtquiz/style"
+						exclude="\.scss|\.map"
+
+						>
+				</field>
+				<field name="fbimgs" type="combo"
+					default="Yes"
+					description="Display the checkmark or X when user gets a question right or wrong"
+					label="Feedback Images"
+				>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</field>
+				<field name="feedbackImgStyle" type="combo"
+					   default="Default"
+					   description="The styling for the images"
+					   label="Feedback Image Style"
+					   >
+					<option value="Default">Default</option>
+					<option value="material_black">material_black</option>
+					<option value="playful_icons">playful_icons</option>
+				</field>
+				<field name="singlequiz" type="combo"
+					default="No"
+					description="PLG_TXTQUIZ_SINGLEQUIZDESC"
+					label="PLG_TXTQUIZ_SINGLEQUIZ"
+				>
+					<option value="Yes">Yes</option>
+					<option value="No">No</option>
+				</field>
+				<field name="displaybar" type="combo"
+					default="No"
+					description="Display the completion bar"
+					label="Display Bar in Scorebox"
+				>
+					<option value="No">No</option>
+					<option value="Yes">Yes</option>
+				</field>
+				<field name="displayanswercount" type="combo"
+					default="Yes"
+					description="Break down answers by number of correct answers, incorrect answers, and incomplete answers in scorebox."
+					label="Display Answer Count"
+				>
+					<option value="No">No</option>
+					<option value="Yes">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
+
+</extension>

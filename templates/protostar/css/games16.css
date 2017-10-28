@@ -1,0 +1,34 @@
+.flip-container{
+    float: none;
+    display: inline-block;
+    width: calc(12% - 7.5px);
+}
+
+.front {
+    background: #fff url(../images/16cbgr.png) no-repeat;
+    background-size: 95%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+div.flip-container:nth-child(5) .front,
+div.flip-container:nth-child(5).back,
+div.flip-container:nth-child(6) .front,
+div.flip-container:nth-child(6).back,
+div.flip-container:nth-child(7) .front,
+div.flip-container:nth-child(7).back,
+div.flip-container:nth-child(8) .front,
+div.flip-container:nth-child(8).back,
+div.flip-container:nth-child(9) .front,
+div.flip-container:nth-child(9).back,
+div.flip-container:nth-child(5),
+div.flip-container:nth-child(6),
+div.flip-container:nth-child(7),
+div.flip-container:nth-child(8),
+div.flip-container:nth-child(9){
+    margin-bottom: 5px;    
+}
+
+.flip-container.zoomin{
+    z-index: 99999;
+}

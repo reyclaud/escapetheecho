@@ -1,0 +1,63 @@
+div.tqQuestion {
+  position: relative;
+  padding: 10px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-top: 3px solid black; }
+  div.tqQuestion span.tqHeader {
+    font-size: 1.5em; }
+  div.tqQuestion img.tqFeedback {
+    float: right; }
+  div.tqQuestion input[type="radio"] {
+    display: inline-block; }
+  div.tqQuestion label {
+    display: inline-block;
+    margin-left: 4px;
+    margin-bottom: 5px; }
+  div.tqQuestion .tqSubmit {
+    margin-top: 10px; }
+  div.tqQuestion form {
+    margin-bottom: 20px; }
+
+div.tqScoreBox {
+  position: relative;
+  padding: 10px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-top: 3px solid black; }
+  div.tqScoreBox span.tqHeader {
+    font-size: 2em; }
+  div.tqScoreBox img.tqGradeAll {
+    position: absolute;
+    right: 10px;
+    top: 5px; }
+  div.tqScoreBox input[type="button"] {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  div.tqScoreBox span.tqScoreBoxResults {
+    display: block;
+    min-height: 40px;
+    width: 97%;
+    background: rgba(235, 235, 235, 0.8);
+    border-radius: 4px;
+    padding: 10px; }
+
+div.tqFeedbackBar {
+  width: 100%;
+  display: block !important;
+  bottom: 10px !important;
+  height: 10px !important;
+  background-color: grey;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative; }
+  div.tqFeedbackBar .tqColorBar {
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    right: 100%; }
+
+/*# sourceMappingURL=simple_white.css.map */

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="template">
+	<name>Questionnaires</name>
+	<creationDate>2017-04-03</creationDate>
+	<author>Forbes</author>
+	<authorEmail>forbes@gmail.com</authorEmail>
+	<authorUrl>http://www.escapetheecho.com</authorUrl>
+	<copyright>2017</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	<positions>
+		<position>breadcrumb</position>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+	</positions>
+</extension>

@@ -1,0 +1,1575 @@
+/**
+ * @author Design & Accessible Team ( Angie Radtke  )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+.answers-count-nav ul {margin-left:0px;}
+.answers-count-nav ul li{list-style:none !important; display:inline-block; font-size:20px; margin-right:20px;}
+.answers-count{width: 80%; margin: 0 auto;}
+.answers-count-holder{border-collapse: collapse; }
+.answers-count-holder td{ border:1px solid #000; padding:5px;}
+.table-head  td{border:none; background:#1a3867; color:#fff;}
+
+
+.pd-holder{width: 80%; margin: 0 auto;}
+.personal-data{ border-collapse: collapse;}
+.personal-data td{ border:1px solid #000; padding:5px;}
+.personal-data tr:last-child{font-weight:bold;}
+@font-face {
+    font-family: teaspoon;
+    src: url(ABEAKRG.TTF);
+}
+
+@font-face {
+    font-family: arial-medium;
+    src: url(arial-mt-std-medium.otf);
+}
+
+@font-face { font-family: 'FontAwesome'; src: local('FontAwesome'); }
+
+
+body {
+    background: #fff;
+    color: #0467be;
+    font-size: 15px;
+    padding: 0px;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+body.frontpage {
+    color: #000;
+}
+
+img { border: 0 none; }
+
+fieldset{
+    border: none;
+}
+
+input, textarea, keygen, select, button{
+    font-size: 15px;
+}
+
+.formCaption2 {
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+input#yourname,
+input#emailaddress,
+input#facebookTwitter{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    padding-bottom: 8px;
+    margin-top: 20px;    
+    border-bottom: solid 1px #eee;
+}
+
+.formError {
+    font-size: 15px;
+}
+
+#main-wrapper{
+    /*    background: url(../images/header.jpg) no-repeat;
+        background-size: 100% auto;
+        padding-top: 10%;*/
+}
+
+#main-content {
+    /*width: 1200px;*/
+    margin: auto;
+}
+
+
+.frontpage #main-content {
+    width: calc(100% - 160px);
+    max-width: 840px;
+    border: solid 2px #000;
+    padding: 40px 60px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    max-height: 740px;
+    overflow-y: scroll;
+}
+
+form.formResponsive h2 {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.formControls .formBody .simple_with_animation li label, 
+.formControls .option-sort-wrap .simple_with_animation.vertical.dropbox li label  { 
+    /*line-height: 34px;*/
+    /*margin-left: 10px;*/
+    color: #0467be;
+}
+
+.code-red {
+    color: #f00;
+}
+
+input[type=checkbox],
+input[type=radio]{
+    visibility: hidden;
+}
+
+/*input[type=radio]::before,
+input[type=checkbox]::before{
+    content: "\f1db";
+    font-family: "FontAwesome", arial, sans-serif;    
+    color: #0467be;
+    font-size: 17px;
+    font-weight: normal;    
+    position: relative;
+    top: -3px;
+    visibility: visible;
+    display: none;
+}*/
+
+/*input[type=radio].active::before,
+input[type=checkbox].active::before{
+    display: inline;
+}
+
+input[type=radio]:checked::before,
+input[type=checkbox]:checked::before{
+    content: "\f111";
+    color: #ff002d;
+    color: #0467be;
+}*/
+
+div#overlay-wrapper {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+}
+
+div#overlay-content {
+    width: calc(40% - 60px);
+    position: absolute;
+    /*height: 440px;*/
+    background: #fff;
+    top: 150px;
+    left: 30%;
+    display: none;
+    padding: 30px;
+
+    border-radius: 5px;
+}
+
+#ete-questionnaires-echo-coins.formResponsive{
+    margin-bottom: 0px;
+}
+
+#ete-questionnaires div.rsform-block:nth-of-type(1n+2) {visibility: hidden;}
+
+#ete-questionnaires.form-loaded div.rsform-block:nth-of-type(1n+2) {display: none; visibility: visible;}
+#ete-questionnaires-controls div.rsform-block {display: none; visibility: visible; margin-top: 40px;}
+#ete-questionnaires-popups div.rsform-block {display: none; visibility: visible; margin-top: 40px;}
+#ete-questionnaires-echo-coins div.rsform-block {display: none; visibility: visible; margin-top: 40px;}
+
+#ete-questionnaires div.rsform-block.rsform-block-next,
+#ete-questionnaires-controls div.rsform-block.rsform-block-next,
+#ete-questionnaires div.rsform-block.rsform-block-timer,
+#ete-questionnaires-controls div.rsform-block.rsform-block-timer{
+    /*display: inline-block;*/
+    width: 20%;
+    min-width: 240px;
+    margin-left: -3px;
+    float: right;
+}
+
+#ete-questionnaires-controls div.rsform-block.rsform-block-timer,
+#ete-questionnaires div.rsform-block.rsform-block-timer{
+    width: 60%;
+    text-align: center;
+    float: none;
+    margin-top: -4px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#ete-questionnaires-controls .rsform-block.rsform-block-next,
+#ete-questionnaires .rsform-block.rsform-block-next{
+    text-align: right;
+    position: fixed;
+    top: 520px;
+    right: 0;
+    margin-top: 0;
+}
+
+#ete-questionnaires div.rsform-block{
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+}
+
+#ete-questionnaires-controls div.rsform-block .formBody,
+#ete-questionnaires div.rsform-block .formBody{
+    float: none;
+    /*padding-bottom: 10px;*/
+}
+
+.green-text{
+    /*color: #38761d;*/
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.green-text.lickert-title{
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.yellow-green-text,
+#myTimer,
+.rsform-submit-button{
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+#myTimer .blue-text{
+    font-weight: normal;
+}
+
+.yellow-green-text,
+.rsform-submit-button{
+    /*color: #0467be;*/
+    color: #00ff00;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.rsform-block.rsform-block-next button,
+.rsform-submit-button{
+    cursor: pointer;
+    background: none;    
+    border: solid 1px #0467be;
+    border-radius: 5px;
+    height: 40px;
+    padding: 0px 9px;
+    font-size: 25px;
+    line-height: 40px;
+    outline:none;
+}
+
+.rsform-block.rsform-block-next button{
+    font-size: 16px;
+}
+
+#myTimer{
+    text-align: center;
+    display: none;
+    line-height: 38px;
+}
+
+.blue-text{
+    color: #0467be;
+    font-size: 16px;
+}
+
+.ete-button.go-button{
+    border: solid 1px #0467be;
+    background: none;
+    cursor: pointer;
+    width: 75px;
+    padding-top: 10px;
+    border-radius: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    outline:none;
+    position: relative;
+    left: calc(50% - 38px);
+    display: none;
+}
+
+.formResponsive .formHorizontal .formControlLabel,
+.rsform-block.rsform-block-chooseanotherquiz .formControlLabel{
+    float: none;
+    text-align: left;
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    /*margin-top: 22px;*/
+}
+
+.formResponsive .formHorizontal .formControls{
+    margin: 0;
+}
+
+.formResponsive input[type="radio"],
+.formResponsive input[type="checkbox"] {
+    padding-left: 18px;
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+    visibility: hidden;
+}
+
+p.rsformVerticalClear{
+    margin-bottom: 10px;
+}
+
+.rsformVerticalClear label{
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.rsform-block.lickert-scale input[type="checkbox"],
+.rsform-block-cultureandthe input[type="checkbox"],
+.rsform-block-conservativeandliberal input[type="checkbox"],
+.rsform-block-socialismandcapitalism input[type="checkbox"],
+.rsform-block-democracyordictatorship input[type="checkbox"],
+.rsform-block-internationalpolitics input[type="checkbox"],
+.rsform-block-politicsofthecountry input[type="checkbox"],
+.rsform-block-careaboutsport input[type="checkbox"],
+.rsform-block-wanttoberich input[type="checkbox"],
+.rsform-block-whichisbetter input[type="checkbox"],
+.rsform-block-whenwedie input[type="checkbox"],
+.rsform-block-thinkof-yourselfas input[type="checkbox"],
+.rsform-block-responsibleforchildeducation input[type="checkbox"],
+.rsform-block-educatedtodaythanbefore input[type="checkbox"]{
+    margin-right: 0;
+    display: none;
+}
+
+.rsform-block-cultureandthe label,
+.rsform-block-conservativeandliberal label,
+.rsform-block-socialismandcapitalism label,
+.rsform-block-democracyordictatorship label,
+.rsform-block-careaboutsport label,
+.rsform-block-wanttoberich label,
+.rsform-block-whichisbetter label,
+.rsform-block-responsibleforchildeducation label,
+.rsform-block-whenwedie label,
+.rsform-block-howfreearewe label,
+.rsform-block-trustscientists label,
+.rsform-block-thinkof-yourselfas label,
+.rsform-block-technologymakeslife label,
+.rsform-block-educatedtodaythanbefore label{
+    width: calc(50% - 5px);
+}
+
+.rsform-block-howhappyareyou label,
+.rsform-block-internationalpolitics label,
+.rsform-block-politicsofthecountry label{
+    width: calc(33.33% - 5px);
+}
+
+.rsform-block.lickert-scale label:nth-of-type(2),
+.rsform-block-whenwedie label:nth-of-type(2),
+.rsform-block-whenwedie label:nth-of-type(3),
+.rsform-block-thinkof-yourselfas label:nth-of-type(2),
+.rsform-block-politicsofthecountry label:nth-of-type(2),
+.rsform-block-internationalpolitics label:nth-of-type(2),
+.rsform-block-responsibleforchildeducation label:nth-of-type(2),
+.rsform-block-educatedtodaythanbefore label:nth-of-type(2){
+    text-align: center;
+}
+
+.rsform-block.lickert-scale label:last-of-type,
+.rsform-block-cultureandthe label:last-of-type,
+.rsform-block-conservativeandliberal label:last-of-type,
+.rsform-block-socialismandcapitalism label:last-of-type,
+.rsform-block-democracyordictatorship label:last-of-type,
+.rsform-block-careaboutsport label:last-of-type,
+.rsform-block-wanttoberich label:last-of-type,
+.rsform-block-whenwedie label:last-of-type,
+.rsform-block-whichisbetter label:last-of-type,
+.rsform-block-thinkof-yourselfas label:last-of-type,
+.rsform-block-politicsofthecountry label:last-of-type,
+.rsform-block-internationalpolitics label:last-of-type,
+.rsform-block-responsibleforchildeducation label:last-of-type,
+.rsform-block-educatedtodaythanbefore label:last-of-type{
+    text-align: right;
+}
+
+.formBody textarea{
+    width: 50%;
+}
+
+.clearer{
+    clear: both;
+}
+
+.rsform-block.rsform-block-instructions ul{
+    list-style: none;
+    margin-left: 0px;
+}
+
+.rsform-block.rsform-block-instructions ul li{
+    line-height: 28px;    
+}
+
+.rsform-block.rsform-block-instructions ul li::before {
+    content: "\f111";
+    /*content: "\f1db";*/
+    font-family: FontAwesome;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    position: relative;
+    top: -1px;
+}
+
+.formResponsive label{
+    height: auto;
+}
+
+.formResponsive label:hover{
+    font-weight: bold;
+}
+
+.formBody.drag-drop-formbody.drag-drop-formbody-center {
+    width: 88%;
+    /*margin-top: 34px;*/
+}
+
+.drag-drop-formbody-center ol.simple_with_animation.drag.vertical li {
+    display: inline-block;
+    /*width: 20%;*/
+}
+
+ol.simple_with_animation.horizontal {
+    margin: 0;
+    width: 100%;
+}
+
+ol.simple_with_animation.horizontal li {
+    display: inline-block;
+    /*width: 33%;*/
+    vertical-align: middle;
+}
+
+.quiz-instruction-title {
+    font-weight: bold;
+    margin-left: 18px;
+    margin-bottom: 10px;
+}
+
+.instruction-details p{
+    margin-left: 18px;
+}
+
+.instruction-details {
+    width: 960px;
+    margin: auto;
+}
+
+span.formValidation{
+    display: none !important;
+}
+
+ol.simple_with_animation{
+    margin-bottom: 0;
+}
+
+.drag-drop-formbody.drag-drop-formbody-center ol {
+    width: 100%;
+    margin: auto;
+}
+
+.drag-drop-formbody-center ol.vertical li div.rsformVerticalClear{
+    /*width: calc(100% - 25px);*/
+}
+
+.drag-drop-formbody-center ol.vertical li div.rsformVerticalClear label{
+    text-align: center;
+    width: 100%;
+}
+
+div.drag-drop-formbody:not(.drag-drop-formbody-right){
+    width: auto;
+    min-width: 172px;
+}
+
+.rsform-block.rsform-block-inorderofsize .formControls{
+    margin-left: calc(calc(100% - 768px) / 2);
+}
+
+.formResponsive .formHorizontal .rsform-block {
+    margin-bottom: 0;
+}
+
+.rsform-block.rsform-block-next .formControlLabel{
+    display: none;
+}
+
+span.blink{
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+span.blink.green-text{
+    color: #00ff00;
+}
+
+.next-question-message {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 35px;
+    margin-top: -10px;
+}
+
+.green-next-question {
+    color: #00ff00;
+    font-size: 25px;    
+    padding: 3px 9px;
+    border-radius: 5px;
+    line-height: 40px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    cursor: pointer;
+}
+
+.rsform-block.rsform-block-echocoins {
+    display: none !important;
+    float: right;
+    width: 30%;
+    min-height: 72px;
+    font-size: 16px;
+    /*position: absolute;*/
+    /*    top: 25px;
+        right: 0;*/
+    /*font-weight: bold;*/
+}
+
+.rsform-block.rsform-block-echocoins.shown{
+    display: block !important;
+    margin-top: 0 !important;
+}
+
+span.echoos{
+    background: url(../images/echoo-logo.png) no-repeat;
+    background-size: 60px auto;
+    color: transparent;
+    display: inline-block;
+    height: 25px;
+    width: 65px;
+    top: -7px;
+    position: relative;
+}
+
+span.echoCoinsRandom, span.echoCoinsRandom.coin1, span.echoCoinsCoin1, span.echoCoinsCoin5, span.echoCoinsCoin6 {
+    background: url(../images/1coin.png) no-repeat;
+    background-size: 100%;
+    top: -18px;
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    color: transparent;
+    margin-right: 10px;
+}
+span.echoCoinsRandom.coin2{
+    background: url(../images/2coin.png) 100% no-repeat;
+    background-size :100%;
+}
+span.echoCoinsRandom.coin3{
+    background: url(../images/3coin.png) 100% no-repeat;
+    background-size: 100%;
+}
+span.echoCoinsRandom.coin4{
+    background: url(../images/4coin.png) 100% no-repeat;
+    background-size: 100%;
+}
+span.echoCoinsRandom.coin5, span.echoCoinsCoin5{
+    background: url(../images/5coin.png) 100% no-repeat;
+    background-size: 100%;
+}
+span.echoCoinsRandom.coin6, span.echoCoinsCoin6{
+    background: url(../images/6coin.png) 100% no-repeat;
+    background-size: 100%;
+}
+
+.what-echoos {
+    text-align: right;
+    /*width: 260px;*/
+    /*position: relative;*/
+    /*top: -12px;*/
+    margin-top: -5px;
+    margin-bottom: 10px;
+}
+
+.what-echoos.what-echoos-line2 {
+    /*margin-top: 10px;*/
+    margin-bottom: 0;
+}
+
+.what-echoos a {
+    color: #0467be;
+}
+
+.what-echoos a:hover{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.rsform-block.rsform-block-next{
+    /*display: inline-block !important;*/
+}
+
+.rsform-block.rsform-block-theimageontheleft img,
+.rsform-block.rsform-block-theaboveimage img,
+.rsform-block.rsform-block-workofart img{
+    /*text-align: center;*/
+    float: left;
+}
+
+.rsform-block.rsform-block-theimageontheleft .formControlLabel,
+.rsform-block.rsform-block-workofart .formControlLabel{    
+    margin-top: 50px;
+}
+
+.rsform-block.rsform-block-theimageontheleft .formControlLabel,
+.rsform-block.rsform-block-theimageontheleft .formControls,
+.rsform-block.rsform-block-theaboveimage .formControlLabel,
+.rsform-block.rsform-block-theaboveimage .formControlLabel,
+.rsform-block.rsform-block-workofart .formControlLabel,
+.rsform-block.rsform-block-theaboveimage .formControls,
+.rsform-block.rsform-block-workofart .formControls{        
+    float: left;
+    width: 552px;        
+    margin-left: 68px !important;
+    text-align: left;
+}
+
+ul.quizesList{    
+    margin: auto;
+    width: 100%;        
+    /*background: #eee;*/
+    /*border: solid 1px #d8d8d8;*/
+    /*border-top: solid 1px #d8d8d8;*/    
+    padding: 15px 0 0;    
+    /*border-radius: 0 0 3px 3px;*/
+    text-align: center;
+    list-style: none;
+}
+ul.quizesList li{
+    /*width: 300px;*/
+    width: 195px;
+    display: inline-block;
+    text-align: left;
+    padding: 0;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: top;
+}
+
+ul.quizesList li a{
+    text-transform: uppercase;
+    padding: 0;
+    line-height: 14px;
+    display: block;
+    font-size: 13px;
+}
+
+ul.quizesList li a:before{    
+    display: block;
+    margin: auto;
+    border: solid 1px #0467be;
+    height: 195px;
+    width: 190px;
+    /*padding: 2px;*/
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+ul.quizesList li a:hover{
+    color: #f00;
+    text-decoration: none;
+}
+
+ul.quizesList li a span{
+    line-height: 35px !important;
+}
+
+.formBody textarea{
+    display: block !important;
+    margin: auto;
+}
+
+.text-cetner{
+    text-align: center;
+    font-weight: bold;
+}
+
+ul.nav.menu.ete-menu{
+    text-align: center;
+    /*max-width: 1200px;*/
+    margin: auto;
+}
+
+ul.nav.menu.ete-menu li {    
+    display: inline-block;
+    text-align: center;
+    position: relative;    
+}
+
+ul.nav.menu.ete-menu li a{
+    text-transform: uppercase;
+    line-height: 26px;
+    padding: 0 18px;
+    display: inline;
+}
+
+ul.nav.menu.ete-menu li > a{
+    border: solid 1px #fff;
+    border-bottom: none;
+}
+
+ul.nav.menu.ete-menu li > a + ul li a{    
+    border: none;
+}
+
+ul.nav.menu.ete-menu li > a + ul li a > span{
+    line-height: 35px;
+}
+
+ul.nav.menu.ete-menu li:nth-child(even){
+    font-weight: bold;
+}
+
+ul.nav.menu.ete-menu li:nth-child(even) ul.nav-child li:nth-child(even){
+    font-weight: normal;
+}
+
+ul.nav.menu.ete-menu li:nth-child(even) ul.nav-child li:nth-child(odd){
+    font-weight: normal;
+}
+
+ul.nav-child{
+    display: none;    
+    width: 335px;
+    position: absolute;
+    left: 0;
+    background: #eee;
+    border: solid 1px #d8d8d8;
+    border-top: solid 1px #d8d8d8;
+    z-index: 9;
+    padding: 15px 0 0;
+    margin-top: -1px;
+    border-radius: 0 0 3px 3px;
+}
+
+ul.nav.menu.ete-menu li ul.nav-child li{
+    width: 100%;
+    text-align: left;
+    padding: 0;
+    line-height: 36px;
+}
+
+ul.nav.menu.ete-menu li:hover > a{
+    color: #f00;
+}
+
+ul.nav.menu.ete-menu li ul.nav-child li a:hover{
+    color: #f00;
+    /*font-weight: bold;*/
+    text-decoration: none;
+}
+
+/*ul.nav.menu.ete-menu li:first-child a{
+    padding-left: 0 !important;
+}
+
+ul.nav.menu.ete-menu li:last-child a{
+    padding-right: 0 !important;
+}*/
+
+ul.nav.menu.ete-menu li:hover ul.nav-child{
+    display: block;
+}
+
+ul.nav.menu.ete-menu li ul.nav-child li:hover a span.percentage-done{
+    font-weight: bold;
+    color: #21b384;
+}
+
+.formResponsive fieldset{
+    position: relative;
+}
+
+.rsform-block.rsform-block-timer .formControlLabel,
+.rsform-block.rsform-block-echocoins.shown .formControlLabel {
+    display: none;
+}
+
+.numberEchos {
+    text-align: right;
+    margin-right: 15px;
+}
+
+button[name="form\[next\]"]{
+    display: none;
+}
+
+ul.nav-child li{
+    padding-left: 20px;
+}
+
+ul.nav.menu.ete-menu li.item-135 > a {
+    display: block;
+    position: relative;
+    z-index: 10;    
+}
+
+ul.nav.menu.ete-menu li.item-135:hover > a {
+    font-weight: bold;
+}
+
+ul.nav.menu.ete-menu li > a.hover{
+    text-decoration: none;
+    background: none;    
+}
+
+ul.nav.menu.ete-menu li:nth-child(odd) > a.hover{
+    font-weight: bold;
+}
+
+ul.nav.menu.ete-menu li:nth-child(even) > a.hover{
+    font-weight: normal;
+}
+
+ul.nav.menu.ete-menu li.parent:hover > a {
+    background-color: #eeeeee;
+    border: solid 1px #d8d8d8;    
+    border-bottom: none;
+}
+
+.percentage-done i{
+    color: #21b384;
+}
+
+button.install-app {
+    background: #f4cccc;
+    border: solid 1px #df6464;
+    padding: 10px;
+    border-radius: 16px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    outline: none;
+}
+
+p.site-logo-image {
+    margin-bottom: 30px;
+}
+
+span.percentage-done {
+    float: right;
+    margin-right: 10px;
+}
+
+.quizesList li span.percentage-done {
+    display: block;
+    margin-right: 0;
+    float: none;
+    color: #21b384;
+    line-height: 18px !important;
+}
+
+.quizesList li span.percentage-done .all-done{
+    line-height: 18px !important;
+}
+
+button[name=form\[next\]]{
+    display: none;
+}
+
+.echoosTotal,
+.echoosNewTotal{
+    color: #0f0;
+    /*font-weight: bold;*/
+    font-size: 54px;
+    display: block;
+    line-height: 40px;
+    margin-top: 3px;
+}
+
+.echoosNewTotal .round-zero,
+.echoosTotal .round-zero{
+    /*margin-top: 5px;*/
+    font-size: 42px;
+    font-family: "teaspoon", arial, sans-serif;
+    position: relative;
+    top: -4px;
+    font-weight: bold;
+}
+
+.echoTotalWrapper {
+    display: inline-block;
+    height: 40px;
+    overflow: hidden;
+    position: relative;
+    top: 11px;
+}
+
+span.non-zero {
+    position: relative;
+    top: -5px;
+    font-size: 48px;
+    font-family: "arial-medium", arial, sans-serif;
+
+}
+
+span.non-zero.non-zero-1{
+    top: -4px;
+}
+
+span.non-zero.non-zero-3{
+    top: -4px;
+}
+
+span.non-zero.non-zero-1.echo-coins-10,
+span.non-zero.non-zero-1.echo-coins-12,
+span.non-zero.non-zero-1.echo-coins-13,
+span.non-zero.non-zero-1.echo-coins-14,
+span.non-zero.non-zero-1.echo-coins-15,
+span.non-zero.non-zero-1.echo-coins-16,
+span.non-zero.non-zero-1.echo-coins-17,
+span.non-zero.non-zero-1.echo-coins-18,
+span.non-zero.non-zero-1.echo-coins-19{
+    top: -5px;
+}
+
+.rsform-block.rsform-block-stepsoftheladder,
+.rsform-block.rsform-block-topoftheladder,
+.rsform-block.rsform-block-onwhochstepareyouthistime{
+    text-align: center;
+}
+
+.rsform-block.rsform-block-stepsoftheladder img,
+.rsform-block.rsform-block-topoftheladder img,
+.rsform-block.rsform-block-onwhochstepareyouthistime img{
+    height: 240px;
+}
+
+/*.rsform-block.rsform-block-stepsoftheladder .formControlLabel,*/
+.rsform-block.rsform-block-topoftheladder .formControlLabel,
+.rsform-block.rsform-block-onwhochstepareyouthistime  .formControlLabel{
+    text-align: left;
+}
+
+.rsform-block.rsform-block-stepsoftheladder .formControls input,
+.rsform-block.rsform-block-topoftheladder .formControls input,
+.rsform-block.rsform-block-onwhochstepareyouthistime .formControls input{
+    margin-right: 0;
+}
+
+.rsform-block.rsform-block-stepsoftheladder .formControls label,
+.rsform-block.rsform-block-topoftheladder .formControls label,
+.rsform-block.rsform-block-onwhochstepareyouthistime .formControls label{
+    margin-right: 30px;
+}
+
+.rsform-block.rsform-block-stepsoftheladder .formControls,
+.rsform-block.rsform-block-topoftheladder .formControls,
+.rsform-block.rsform-block-onwhochstepareyouthistime .formControls{
+    text-align: center;
+}
+/*
+.rsform-block.rsform-block-topoftheladder .formControls,
+.rsform-block.rsform-block-onwhochstepareyouthistime .formControls{
+    position: absolute;
+    top: 54px;
+    left: calc(52% - 10px);
+}
+
+.rsform-block.rsform-block-topoftheladder .rsformVerticalClear label,
+.rsform-block.rsform-block-onwhochstepareyouthistime .rsformVerticalClear label{
+    font-size: 28px;
+    color: #000;
+    font-weight: bold;
+    line-height: 28px;
+}
+
+.rsform-block.rsform-block-topoftheladder img,
+.rsform-block.rsform-block-onwhochstepareyouthistime img{
+    margin-left: -200px;
+}*/
+
+.echoos-logo {
+    background: url(../images/echoo-logo.png) no-repeat;
+    color: transparent;
+    background-size: 52px auto;
+    position: relative;
+    /* padding: 6px 0px 4px; */
+    background-position: 1px 1px;
+    width: 55px;
+    height: 21px;
+    /* letter-spacing: 2.5px; */
+    display: inline-block;
+    top: -6px;
+    line-height: 17px;
+}
+
+.coin-fly-text .echoos-logo {
+    line-height: 28px;
+    height: 30px;
+}
+
+.dragger-instructions {
+    position: relative;
+    top: -40px;
+    text-align: center;
+    text-transform: lowercase;
+    font-style: italic;
+    color: #0467be;
+}
+
+a.instruction-link {
+    padding-left: 5px;
+    position: absolute;
+}
+
+a.instruction-link.what-are-echoos {
+    position: absolute;
+}
+
+.what-echoos.what-echoos-line2 .color-green{
+    color: #0f0;
+}
+
+.rsform-block.rsform-block-stepsoftheladder .formControls .formBody,
+.rsform-block.rsform-block-topoftheladder .formControls .formBody{
+    width: 600px;
+    margin: auto;
+}
+
+.rsform-block.rsform-block-coins{
+    display: none;
+    text-align: center;
+    position: absolute;    
+    left: calc(50% - 120px);
+}
+
+.rsform-block.rsform-block-coins .formBody{
+    width: 325px;
+}
+
+.coin-fly-text,
+.rsform-block.rsform-block-finishquizoverlay .blinking strong,
+.flip1, .flip2{
+    text-transform: uppercase;
+    color: #f00;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+.rsform-block.rsform-block-finishquizoverlay .blinking{
+    min-height: 24px;
+}
+
+ul.quizesList + p {
+    font-weight: bold;
+}
+
+.rsform-block.rsform-block-finishquizoverlay .blinking.show strong{
+    display: block;
+}
+
+.congratz-coin {
+    margin-bottom: 15px;
+    /*color: transparent;*/
+    text-align: left;
+    padding-left: 30px;
+    color: #f00;
+}
+
+.congratz-coin.show{
+}
+
+.coin-fly-text .echoos-logo{
+    background-size: auto 28px;
+    display: inline-block;
+    width: 75px;
+    top: -7px;
+}
+
+#overlay-bg {
+    background: #000;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    opacity: 0.35;
+}
+
+#overlay-content-wrap {
+    background: #fff;
+    position: absolute;
+    top: 25%;
+    z-index: 9999;
+    width: 50%;
+    min-height: 315px;
+    left: calc(25%);
+    min-width: 580px;
+    border-radius: 3px;
+}
+
+span.non-bold {
+    font-weight: normal;
+}
+
+div#overlay-content-inner-wrap {
+    padding: 15px;
+    line-height: 22px;
+}
+
+.signoff-header {
+    /*font-weight: bold;*/
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.contact-details input {
+    display: block;
+    width: 50%;
+    margin-bottom: 5px;
+    border: solid 1px #ccc;
+    padding: 5px 7px;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #0467be;
+}
+
+.contact-details input::placeholder{
+    color: #0467be;
+}
+
+.signoff-footer {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 0px;
+    right: 2px; 
+    font-weight: bold;
+}
+
+.close-overlay:hover {
+    color: #f00;
+    cursor: pointer;
+}
+
+.rsform-block-echocoins .formDescription{
+    display: none;
+}
+
+.moduletable.m_form_top {
+    padding-right: 70px;
+}
+
+form#ete-questionnaires {
+    margin-top: -12px;
+}
+
+.formBody.options-has-image img{
+    float: left;
+    width: 90px;
+    border: solid 1px;
+    padding: 1px;
+    cursor: pointer;
+}
+
+.formBody.options-has-image input{
+    position: relative;
+    left: -58px;
+    top: 20px;
+}
+
+.formBody.options-has-image input:last-of-type{
+    position: static;
+    margin-left: calc(50% - 53px);
+}
+
+.formBody.options-has-image input,
+.formBody.options-has-image label{
+    margin-top: 78px;
+    margin-left: 3px;
+}
+
+.formBody.options-has-image input:last-of-type,
+.formBody.options-has-image label:last-of-type{
+    margin-top: 50px;
+}
+
+.moduletable.m_form_controls {
+    position: relative;
+}
+
+.formBody.options-has-image label{
+    display: none;
+}
+
+.formBody.options-has-image label:nth-of-type(8),
+.formBody.options-has-image label:last-of-type{
+    display: inline-block;
+}
+
+.rsform-block.rsform-block-mostpleasure.drag-drop-form .formBody.drag-drop-formbody{
+    margin-left: 90px;
+    min-width: 320px;
+    margin-top: 35px;
+}
+
+.rsform-block.rsform-block-mostpleasure.drag-drop-form .formBody.drag-drop-formbody.drag-drop-formbody-right{
+    margin-left: 0;
+    width: 170px !important;
+    min-width: 170px;
+}
+
+.rsform-block-finishquizoverlay p{
+    text-align: center;
+}
+
+p.right-align{
+    text-align: right;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.rsform-block-finishquizoverlay p.align-center,
+.rsform-block.rsform-block-chooseanotherquiz p.align-center{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.rsform-block.rsform-block-chooseanotherquiz p.align-center{
+    margin-top: 5px;
+}
+
+.rsform-block.rsform-block-chooseanotherquiz div.formBody{
+    float: none;
+}
+
+.rsform-block.rsform-block-bannedinpublic{
+    width: 895px;
+}
+
+.rsform-block.rsform-block-topoftheladder,    
+.rsform-block.rsform-block-stepsoftheladder {    
+    position: relative;
+    top: -70px;
+}
+
+.rsform-block.rsform-block-finishquizoverlay,
+.rsform-block.rsform-block-chooseanotherquiz{    
+    position: relative;
+    top: -60px;
+}
+
+.instruction-link:hover span.color-red,
+.item-136:hover a{
+    color: #f00;
+}
+
+.strong{
+    font-weight: bold;
+}
+
+a:hover span.hover-color-red, .color-red{
+    color: #f00;
+}
+
+.rsform-block.rsform-block-finishquizoverlay {
+    max-width: 1600px !important;
+}
+
+.rsform-block.rsform-block-signofflinks .formControlLabel,
+.rsform-block.rsform-block-chooseanotherquiz .formControlLabel{
+    display: none;
+}
+
+p.left-align.float-left {
+    /*float: left;*/
+}
+
+p.right-align.float-right {
+    float: right;
+}
+
+.escape-the-echo-logo{
+    background: url(../images/escape-the-echo-logo.png) no-repeat;
+    background-size: auto 22px;
+    color: transparent;
+    width: 140px;
+    display: inline-block;
+    line-height: 22px;
+    position: relative;
+    top: -2px;
+}
+
+.rsform-block.rsform-block-signofflinks a{
+    padding: 0 20px;
+    /*font-weight: bold;*/
+}
+
+.rsform-block.rsform-block-signofflinks p.signoff-links:nth-child(odd) a{
+    font-weight: normal;
+}
+
+.rsform-block.rsform-block-signofflinks p:first-of-type a{
+    /*margin-left: -108px;*/
+}
+
+.rsform-block.rsform-block-signofflinks p{
+    /*width: 25%;*/
+    padding: 0 30px;
+    display: inline-block;
+}
+
+.rsform-block.rsform-block-signofflinks p:first-of-type{
+    /*text-align: left;*/
+}
+
+.rsform-block.rsform-block-signofflinks p:last-of-type{
+    text-align: right;
+}
+
+.rsform-block.rsform-block-signofflinks p:nth-last-of-type(2),
+.rsform-block.rsform-block-signofflinks p:nth-last-of-type(3){
+    text-align: center;
+}
+
+.rsform-block.rsform-block-finishquizoverlay {
+    padding-top: 25px;
+}
+
+.rsform-block.rsform-block-signofflinks .formBody{
+    display: inline-block;
+    margin: auto;
+    /*margin-left: calc(50% - 441px);*/
+    width: 100%;
+    text-align: center;
+}
+
+.rsform-block-chooseanotherquiz ul.quizesList li a{
+    font-weight: bold;
+}
+
+.rsform-block-chooseanotherquiz ul.quizesList li,
+.rsform-block-chooseanotherquiz ul.quizesList li a span{
+    line-height: 30px;
+}
+
+.rsform-block.rsform-block-signofflinks {
+    position: relative;
+    top: -35px;
+    width: 100%;
+    max-width: none !important;
+}
+
+.rsform-block-jackpotcongratulation{
+    text-align: center;
+}
+
+a.power-politics-quiz-item:before{
+    background: url(../images/190x195/power-politics-finished.jpg);
+    content: "";
+}
+
+a.home-community-quiz-item:before{
+    background: url(../images/190x195/home-community-finished.jpg);
+    content: "";
+}
+
+a.sports-play-quiz-item:before{
+    background: url(../images/190x195/sports-play-finished.jpg);
+    content: "";
+}
+
+a.beliefs-ideas-quiz-item:before{
+    background: url(../images/190x195/beliefs-ideas-finished.jpg);
+    content: "";
+}
+
+a.science-technology-quiz-item:before{
+    background: url(../images/190x195/science-technology-finished.jpg);
+    content: "";
+}
+
+a.entertainment-culture-quiz-item:before{
+    background: url(../images/190x195/entertainment-culture-finished.jpg);
+    content: "";
+}
+
+.rsform-block.rsform-block-chooseanotherquiz{
+    max-width: 100% !important;
+}
+
+.rsform-block.rsform-block-jackpotcongratulation{
+    /*margin-top: 40px;*/
+    top: 88px;
+    position: absolute;
+    /*left: calc(50% - 120px);*/
+    max-width: none !important;
+    width: 100%;
+}
+
+.rsform-block.rsform-block-nocoins .formBody{
+    text-align: center;
+    font-size: 16px;
+}
+
+.percentage-done .echoos-logo {
+    top: 3px;
+    background-size: 49px auto;
+    width: 50px;
+}
+
+.lowercase-text{
+    text-transform: lowercase !important;
+}
+
+.moduletable.m_bottom {
+    position: absolute;
+    bottom: 0;
+    padding: 0 0 15px 20px;
+}
+
+.moduletable.m_bottom form.formResponsive,
+.moduletable.m_bottom p.formDescription{
+    display: none;    
+}
+
+.fa.fa-circle-thin,
+.fa.fa-circle{
+    float: left;
+    margin-right: 15px;
+    position: relative;
+    top: 2px;
+    cursor: pointer;
+}
+
+.rsform-block > img {
+    border-radius: 5px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+    max-height: 240px;
+}
+
+.italic-font{
+    font-style: italic;
+}
+
+.custom.m_top_banner p,
+.custom.m_burger_menu p{
+    margin: 0;
+}
+
+.page-212 #main-content {
+    width: 960px;
+    margin-top: 25px;
+}
+
+ul#quizeslist li {
+    text-align: center;
+    line-height: 40px;
+    background: #0467be;
+    border: solid 1px #fff;    
+}
+
+ul#quizeslist li:hover{
+    border: solid 1px #0467be;
+}
+
+ul#quizeslist li:hover a{
+    color: #0467be;
+}
+
+ul#quizeslist li a{
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+
+ul#quizeslist {
+    margin-top: 25px;
+}
+
+.page-header-212 {    
+    text-align: right;
+}
+
+.page-header-212 form#login-form {
+    margin-top: 6px;
+}
+
+.page-header-212 .login-greeting,
+.page-header-212 .logout-button{
+    display: inline;
+}
+
+.page-header-212 h2{
+    padding-top: 10px;
+}
+
+#main-wrapper.page-140 #main-content,
+#main-wrapper.page-150 #main-content,
+#main-wrapper.page-182 #main-content {
+    width: 960px;
+    margin: auto;    
+}
+
+.login .form-validate.form-horizontal input#remember{
+    visibility: visible;
+}
+
+.moduletable.sticky {
+    position: fixed;
+    left: -24px;    
+    width: 70px;
+    -ms-transform: rotate(7deg);
+    -webkit-transform: rotate(7deg);
+    transform: rotate(270deg);
+    top: 114px;
+    height: 30px;
+}
+
+input.btn.btn-primary {
+    width: 125px;
+    height: 45px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.btn.jmodedit{
+    display: none;
+}

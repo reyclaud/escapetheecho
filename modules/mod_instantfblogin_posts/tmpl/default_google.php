@@ -1,0 +1,1 @@
+<?php //namespace modules\mod_instantfblogin/** * @package INSTANTFBLOGIN::modules * @subpackage mod_instantfblogin_posts * @author Joomla! Extensions Store * @copyright (C) 2015 - Joomla! Extensions Store * @license GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html */defined('_JEXEC') or die;JHtml::_('jquery.framework');?><div class="ifblgplus"></div>

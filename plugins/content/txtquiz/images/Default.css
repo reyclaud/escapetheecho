@@ -1,0 +1,42 @@
+.tqImgGradeBox {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url('grade.png');
+    width: 95px;
+    height: 111px;
+}
+
+.tqImgFeedback.question {
+     display: block;
+     position: absolute;
+     right: 5px;
+     top: 5px;
+     background: url('question.png');
+     background-size: cover;
+     width: 75px;
+     height: 75px;
+ }
+
+.tqImgFeedback.correct {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url('correct.png');
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+}
+
+.tqImgFeedback.incorrect {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    background: url('incorrect.png');
+    background-size: cover;
+    width: 75px;
+    height: 75px;
+}

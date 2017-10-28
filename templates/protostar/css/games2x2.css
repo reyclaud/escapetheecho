@@ -1,0 +1,146 @@
+.flip-container{
+    /*    width: calc(25% - 10px);    
+        height: 310px;
+        float: left;
+        margin-right: 5px !important;*/
+}
+
+/*.front, .back{
+    width: 100%;
+    height: auto;
+    min-height: 310px;
+}*/
+
+.front{
+    background: #efefef url(../images/giphy.gif) no-repeat;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+/*.back-title img {
+    width: 100%;
+    height: auto;
+}*/
+
+.number-moves {    
+
+}
+
+.flip-container-wrap{
+    /*    width: calc(100% - 20px);
+        margin-left: 20px;
+        max-width: 100%;
+        margin-top: 20px;*/
+
+    z-index: 9999;
+    margin-top: 90px;    
+    border-radius: 17px;
+    /*background-size: 100% auto !important;*/
+    background-position: center 0px;
+}
+
+.flip-container-mainwrap .number-moves {
+    position: relative;
+    width: calc(100% - 10px);
+    font-size: 20px;
+    line-height: 22px;
+    text-transform: lowercase;    
+    text-align: right;
+    padding-right: 10px;
+    display: block;
+    margin-top: 18px;
+    left: 60px !important;
+}
+
+.flip-container-mainwrap .what-echoos{
+    position: static;    
+    margin-top: 10px;
+    margin-bottom: 15px;
+    float: none;
+    text-align: left;    
+    display: block;    
+    max-width: 1030px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.number-moves div {
+    width: 30%;
+    float: left;
+    text-align: left;      
+}
+
+.number-moves div.echo-coins {
+    width: 40%;
+}
+
+.echoo-coins-wrap {
+    position: absolute;    
+}
+
+.min-number-moves{
+    text-align: right !important;
+}
+
+.echo-coins{
+    text-align: left !important;
+}
+
+.number-moves-counter {
+    text-align: center !important;
+}
+
+.pair-button-wrap{
+    text-align: left;
+    width: calc(100%);
+    text-align: center;
+    margin-top: 25px;
+    line-height: 42px;
+}
+
+img.escape-echoo-logo{
+    height: 35px;
+    position: relative;
+    top: 8px;
+}
+
+.flip-container-wrap { 
+    /*background-position: center;*/
+}
+
+@media screen and (max-width: 736px){
+    .flip-container-mainwrap .number-moves{
+        left: 0px !important;
+        padding-right: 0px;
+        line-height: 32px;
+    }
+
+    .flip-container-mainwrap .pair-button-wrap {        
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 568px){
+
+    .number-moves div.echo-coins {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center !important;        
+    }
+
+    .number-moves .number-moves-counter {
+        text-align: center !important;
+        width: 50%;
+    }
+
+    .number-moves .min-number-moves {        
+        width: 50%;
+    }
+
+    .what-echoos div.what-is-escape-echo-wrap,
+    .what-echoos div.what-are-echoo-wrap{
+        width: 100%;
+        text-align: center;
+    }
+}

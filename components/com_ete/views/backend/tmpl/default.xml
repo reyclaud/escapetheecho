@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+    <layout title="ETE_BACKEND">
+        <message>ETE_BACKEND</message>
+    </layout>
+    <fields
+        name="request"
+        addfieldpath="/administrator/components/com_ete/models/fields"
+    >
+        <fieldset name="request">
+            <field
+                name="quizId"
+                type="ete"
+                label="COM_ETE"
+                description="COM_ETE_DESC"
+            />
+        </fieldset>
+    </fields>
+</metadata>

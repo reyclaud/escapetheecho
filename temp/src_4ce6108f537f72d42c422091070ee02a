@@ -1,0 +1,290 @@
+<?php
+defined('_JEXEC') or die;
+function src_4ce6108f537f72d42c422091070ee02a($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+ 
+echo 'here' ;  
+echo 'You ar user' .$user->id.'! Welcome!'; 
+
+ 
+  
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions')); 
+
+ 
+$query->where($db->quoteName('UserId') ." = ". $user->id); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+  
+
+ 
+$query2 = $db->getQuery(true); 
+
+ 
+$query2->select('*'); 
+
+ 
+$query2->from($db->quoteName('jos_users')); 
+
+ 
+$db->setQuery($query2); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+  
+
+ 
+foreach($result as $value){ 
+
+ 
+echo $value->email; 
+
+ 
+echo "<br>"; 
+
+ 
+} 
+
+ 
+  
+
+ 
+$query3 = $db->getQuery(true); 
+
+ 
+$query3->select('*'); 
+
+ 
+$query3->from($db->quoteName('jos_rsform_submissions')); 
+
+ 
+$query3->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$db->setQuery($query3); 
+
+ 
+$result3 = $db->loadObjectList(); 
+
+ 
+  
+
+ 
+foreach($result3 as $value){ 
+
+ 
+echo "<br>"; 
+
+ 
+echo $value->Username; 
+
+ 
+echo "<hr>"; 
+
+ 
+$query4 = $db->getQuery(true); 
+
+ 
+$query4->select('*'); 
+
+ 
+$query4->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$query4->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$query4->where($db->quoteName('SubmissionId') ." = ". $value->SubmissionId); 
+
+ 
+$db->setQuery($query4); 
+
+ 
+  
+
+ 
+$result4 = $db->loadObjectList(); 
+
+ 
+foreach($result4 as $value2){ 
+
+ 
+echo $value2->FieldName ."-". $value2->FieldValue; 
+
+ 
+echo "<br>"; 
+
+ 
+} 
+
+ 
+} 
+
+ 
+echo "<hr> <br> <br> List of Questions <br> <br>"; 
+
+ 
+ //List the Questions 
+
+ 
+$component = $db->getQuery(true); 
+
+ 
+$component->select('*'); 
+
+ 
+$component->from($db->quoteName('jos_rsform_components')); 
+
+ 
+$component->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$db->setQuery($component); 
+
+ 
+$component_result = $db->loadObjectList(); 
+
+ 
+  
+
+ 
+$ctr = 1;  
+
+ 
+foreach($component_result as $value2){ 
+
+ 
+   $caption = "NAME"; 
+
+ 
+   $caption2 = "CAPTION"; 
+
+ 
+   $component_question = $db->getQuery(true); 
+
+ 
+   $component_question->select('*'); 
+
+ 
+   $component_question->from($db->quoteName('jos_rsform_properties')); 
+
+ 
+   $component_question ->where($db->quoteName('ComponentId') ." = ". $value2->ComponentId); 
+
+ 
+   $component_question ->where($db->quoteName('PropertyName') ." = "."'" .$caption."'" ); 
+
+ 
+   //$component_question ->where($db->quoteName('PropertyName') ." = "."'" .$caption2."'" ); 
+
+ 
+   $db->setQuery($component_question,0,1); 
+
+ 
+   $component_question_result= $db->loadObjectList(); 
+
+ 
+   foreach($component_question_result as $res){ 
+
+ 
+   echo $ctr .".)  "; 
+
+ 
+   echo($res->PropertyValue); 
+
+ 
+   $count = $db->getQuery(true); 
+
+ 
+   $count->select('COUNT(*)'); 
+
+ 
+   $count->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+   $count->where($db->quoteName('FieldName') ."="."'" . $res->PropertyValue. "'" ); 
+
+ 
+   $count->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+   $db->setQuery($count); 
+
+ 
+   $count_result= $db->loadResult(); 
+
+ 
+   echo "(".$count_result . ") counts";  
+
+ 
+   echo"<br>"; 
+
+ 
+   } 
+
+ 
+   $ctr++; 
+
+ 
+} 
+
+ 
+//STATIC COUNT 
+
+ 
+echo "Quiz 1"; 
+
+ 
+   $count1 = $db->getQuery(true); 
+
+ 
+    $count1->select('COUNT(*)'); 
+
+ 
+   $count1->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+   $count1->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+   $count1->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+   $count1->where($db->quoteName('FieldValue') ." LIKE ". $db->quote('%'.only chase power to steal from us.'%')); 
+
+ 
+   $db->setQuery($count1); 
+
+ 
+   $count_result2= $db->loadResult(); 
+
+ 
+ echo $count_result2;
+;return get_defined_vars();
+;}

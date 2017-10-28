@@ -1,0 +1,89 @@
+/**
+ * Dragdealer.js 0.9.8
+ * http://github.com/skidding/dragdealer
+ *
+ * (c) 2010+ Ovidiu Cherecheș
+ * http://skidding.mit-license.org
+ */
+
+.dragdealer {
+    position: relative;
+    height: 12px;
+    background: #fff;
+    /*background-color: rgba(1, 138, 29, 0.2);*/
+    margin-bottom: 16px;
+}
+.dragdealer .handle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+.dragdealer .red-bar {
+    width: 64px;
+    height: 30px;
+    background: url(double-sided-arrow-small-gr-3px-green.png) no-repeat;
+    /*background-size: auto 100%;*/
+    font-size: 10px;
+    line-height: 30px;
+    text-align: center;
+    color: transparent;
+}
+
+.dragdealer .red-bar.rated{
+    background: url(double-sided-arrow-small-gr-3px.png) no-repeat;
+    color: #0467be;
+}
+
+
+.dragdealer .disabled {
+    background: #898989;
+}
+
+.drag-wrapper {
+    height: 100%;
+    margin-top: -18px;
+}
+
+.drag-wrapper-left {
+    float: left;
+    width: 50%;
+}
+
+.drag-wrapper-right {
+    float: right;
+    width: 50%;    
+}
+
+.drag-wrapper-left, .drag-wrapper-right {
+    height: 100%;
+}
+
+.left-drag {
+    background: #f00;
+    height: 100%;
+    width: 0;
+    max-width: 90%;
+    float: right;
+}
+
+.right-drag {
+    height: 100%;
+    background: #f00;
+    float: left;
+    width: 0;
+    max-width: 90%;
+}
+
+.drag-wrapper-left::before {
+    content: url(arrow-head-left-bl-thick.png);
+    position: absolute;
+    top: -3px;
+}
+
+.drag-wrapper-right::before {
+    content: url(arrow-head-right-bl-thick.png);
+    position: absolute;
+    top: -3px;
+    right: 0;
+}

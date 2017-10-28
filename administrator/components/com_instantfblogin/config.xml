@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset addfieldpath="/administrator/components/com_instantfblogin/framework/html" id="setup" name="setup" label="COM_INSTANTFBLOGIN_CONFIG_SETUP">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_AUTO_UPDATER" />
+		<field name="registration_email" type="text" datavalidation="email" default="" size="50" label="COM_INSTANTFBLOGIN_REGISTRATION_EMAIL_FORUPDATES" description="COM_INSTANTFBLOGIN_REGISTRATION_EMAIL_FORUPDATES_DESC" />
+	
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_FACEBOOK_CONNECT_SETUP"/>
+		<field name="fblogin_active" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_FBLOGIN_ACTIVE" description="COM_INSTANTFBLOGIN_FBLOGIN_ACTIVE_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="appId" type="text" label="COM_INSTANTFBLOGIN_FIELD_APPID_LABEL" description="COM_INSTANTFBLOGIN_FIELD_APPID_DESC" />
+		<field name="secret" type="text" label="COM_INSTANTFBLOGIN_FIELD_SECRET_LABEL" description="COM_INSTANTFBLOGIN_FIELD_SECRET_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_GPLUS_CONNECT_SETUP"/>
+		<field name="gpluslogin_active" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_GPLUSLOGIN_ACTIVE" description="COM_INSTANTFBLOGIN_GPLUSLOGIN_ACTIVE_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="gplusClientID" type="text" label="COM_INSTANTFBLOGIN_FIELD_GPLUSCLIENTID_LABEL" description="COM_INSTANTFBLOGIN_FIELD_GPLUSCLIENTID_LABEL_DESC" />
+		<field name="gplusKey" type="text" label="COM_INSTANTFBLOGIN_FIELD_GPLUSKEY_LABEL" description="COM_INSTANTFBLOGIN_FIELD_GPLUSKEY_LABEL_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_TWITTER_CONNECT_SETUP"/>
+		<field name="twitterlogin_active" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_TWITTERLOGIN_ACTIVE" description="COM_INSTANTFBLOGIN_TWITTERLOGIN_ACTIVE_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="twitterKey" type="text" label="COM_INSTANTFBLOGIN_FIELD_TWITTERKEY_LABEL" description="COM_INSTANTFBLOGIN_FIELD_TWITTERKEY_LABEL_DESC" />
+		<field name="twitterSecret" type="text" label="COM_INSTANTFBLOGIN_FIELD_TWITTERSECRET_LABEL" description="COM_INSTANTFBLOGIN_FIELD_TWITTERSECRET_LABEL_DESC" />
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_LINKEDIN_CONNECT_SETUP"/>
+		<field name="linkedinlogin_active" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_LINKEDINLOGIN_ACTIVE" description="COM_INSTANTFBLOGIN_LINKEDINLOGIN_ACTIVE_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="linkedinAppid" type="text" label="COM_INSTANTFBLOGIN_FIELD_LINKEDINAPPID_LABEL" description="COM_INSTANTFBLOGIN_FIELD_LINKEDINAPPID_LABEL_DESC" />
+		<field name="linkedinSecret" type="text" label="COM_INSTANTFBLOGIN_FIELD_LINKEDINSECRET_LABEL" description="COM_INSTANTFBLOGIN_FIELD_LINKEDINSECRET_LABEL_DESC" />
+		
+		<field class="module_rendering_ctrl" type="modulestatus" label="COM_INSTANTFBLOGIN_MODULE_STATUS_ENABLED" description="COM_INSTANTFBLOGIN_MODULE_STATUS_ENABLED_DESC" />
+		<field name="video" type="video" class="video" src="http://www.youtube.com/embed/yc4pWVgvbIA?list=UURFzZHb--kxwI62L4v6GQxw" label="COM_INSTANTFBLOGIN_VIDEO_TUTORIAL" />
+		<field name="video2" type="video" class="video" src="https://www.youtube.com/embed/h9RF01ZpKs8" label="COM_INSTANTFBLOGIN_VIDEO2_TUTORIAL" />
+		<field name="videotwitter" type="video" class="video" src="https://www.youtube.com/embed/U64IRmN3V8U" label="COM_INSTANTFBLOGIN_VIDEOTWITTER_TUTORIAL" />
+		<field name="videolinkedin" type="video" class="video" src="https://www.youtube.com/embed/Oj4GdksRIaM" label="COM_INSTANTFBLOGIN_VIDEOLINKEDIN_TUTORIAL" />
+		<field name="video3" type="video" class="video" src="http://www.youtube.com/embed/6VkOgvANdv0" label="COM_INSTANTFBLOGIN_VIDEO3_TUTORIAL" />
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_instantfblogin/framework/html" id="preferences" name="preferences" label="COM_INSTANTFBLOGIN_CONFIG_PREFERENCES">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_TEMPLATE_PREFERENCES"/>
+		<field name="login_form_type" type="radio" class="btn-group" default="jfb" label="COM_INSTANTFBLOGIN_FIELD_LOGINFORMTYPE" description="COM_INSTANTFBLOGIN_FIELD_LOGINFORMTYPE_DESC">
+   			<option value="fb">COM_INSTANTFBLOGIN_FB</option>              
+   			<option value="jfb">COM_INSTANTFBLOGIN_J_FB</option>
+   		</field>
+   		<field name="joomla_template" type="list" default="" label="COM_INSTANTFBLOGIN_JOOMLA_TEMPLATE" description="COM_INSTANTFBLOGIN_JOOMLA_TEMPLATE_DESC">
+			<option value="">COM_INSTANTFBLOGIN_TPL_DEFAULT</option>
+			<option value="compact_">COM_INSTANTFBLOGIN_TEMPLATE_COMPACT</option>
+			<option value="minimal_">COM_INSTANTFBLOGIN_TEMPLATE_MINIMAL</option>
+			<option value="alternative_">COM_INSTANTFBLOGIN_TEMPLATE_ALTERNATIVE</option>
+		</field>
+		<field name="use_modal_lightbox" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_USEMODAL" description="COM_INSTANTFBLOGIN_USEMODAL_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="show_fbavatar" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SHOWFBAVATAR" description="COM_INSTANTFBLOGIN_SHOWFBAVATAR_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="fbavatar_size" type="list" default="normal" label="COM_INSTANTFBLOGIN_FBAVATAR_SIZE" description="COM_INSTANTFBLOGIN_FBAVATAR_SIZE_DESC">
+			<option value="small">COM_INSTANTFBLOGIN_FBAVATAR_SIZE_SMALL</option>
+			<option value="normal">COM_INSTANTFBLOGIN_FBAVATAR_SIZE_NORMAL</option>
+			<option value="large">COM_INSTANTFBLOGIN_FBAVATAR_SIZE_LARGE</option>
+		</field>
+		<field name="facebook_show_loading" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SHOW_FBLOADING" description="COM_INSTANTFBLOGIN_SHOW_FBLOADING_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_FBTEMPLATE_PREFERENCES"/>
+   		<field name="template" type="list" default="" label="COM_INSTANTFBLOGIN_TEMPLATE_INUSE" description="COM_INSTANTFBLOGIN_TEMPLATE_INUSE_DESC">
+			<option value="">COM_INSTANTFBLOGIN_TPL_DEFAULT</option>
+			<option value="_tpl_sdk">COM_INSTANTFBLOGIN_TPL_SDK</option>
+			<option value="_tpl_linear">COM_INSTANTFBLOGIN_TPL_LINEAR</option>
+			<option value="_tpl_smart">COM_INSTANTFBLOGIN_TPL_SMART</option>
+			<option value="_tpl_compact">COM_INSTANTFBLOGIN_TPL_COMPACT</option>
+			<option value="_tpl_comic">COM_INSTANTFBLOGIN_TPL_COMIC</option>
+			<option value="_tpl_rounded">COM_INSTANTFBLOGIN_TPL_ROUNDED</option>
+			<option value="_tpl_description">COM_INSTANTFBLOGIN_TPL_DESCRIPTION</option>
+			<option value="_tpl_elegant">COM_INSTANTFBLOGIN_TPL_ELEGANT</option>
+			<option value="_tpl_essential">COM_INSTANTFBLOGIN_TPL_ESSENTIAL</option>
+			<option value="_tpl_basic">COM_INSTANTFBLOGIN_TPL_BASIC</option>
+			<option value="_tpl_splash">COM_INSTANTFBLOGIN_TPL_SPLASH</option>
+			<option value="_tpl_blank">COM_INSTANTFBLOGIN_TPL_BLANK</option>
+		</field>
+		<field name="use_custom_text" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGINCUSTOM_TEXT" description="COM_INSTANTFBLOGINCUSTOM_TEXT">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="custom_text" default="" type="text" label="COM_INSTANTFBLOGIN_USECUSTOM_TEXT" description="COM_INSTANTFBLOGIN_USECUSTOM_TEXT_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_GPLUSTEMPLATE_PREFERENCES"/>
+		<field name="gplus_template" type="list" default="" label="COM_INSTANTFBLOGIN_GPLUS_TEMPLATE_INUSE" description="COM_INSTANTFBLOGIN_GPLUS_TEMPLATE_INUSE_DESC">
+			<option value="">COM_INSTANTFBLOGIN_TPL_DEFAULT</option>
+			<option value="_tpl_sdk">COM_INSTANTFBLOGIN_TPL_SDK</option>
+			<option value="_tpl_linear">COM_INSTANTFBLOGIN_TPL_LINEAR</option>
+			<option value="_tpl_nice">COM_INSTANTFBLOGIN_TPL_NICE</option>
+			<option value="_tpl_bold">COM_INSTANTFBLOGIN_TPL_BOLD</option>
+			<option value="_tpl_elegant">COM_INSTANTFBLOGIN_TPL_ELEGANT</option>
+			<option value="_tpl_login">COM_INSTANTFBLOGIN_TPL_LOGIN</option>
+			<option value="_tpl_minimal">COM_INSTANTFBLOGIN_TPL_MINIMAL</option>
+			<option value="_tpl_minimal_signin">COM_INSTANTFBLOGIN_TPL_MINIMAL_SIGNIN</option>
+			<option value="_tpl_misc">COM_INSTANTFBLOGIN_TPL_MISC</option>
+			<option value="_tpl_smart">COM_INSTANTFBLOGIN_TPL_SMART</option>
+			<option value="_tpl_blank">COM_INSTANTFBLOGIN_TPL_BLANK</option>
+		</field>
+		<field name="use_custom_gplus_text" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGINCUSTOM_GPLUS_TEXT" description="COM_INSTANTFBLOGINCUSTOM_GPLUS_TEXT">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="custom_gplus_text" default="" type="text" label="COM_INSTANTFBLOGIN_USECUSTOM_GPLUS_TEXT" description="COM_INSTANTFBLOGIN_USECUSTOM_GPLUS_TEXT_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_TWITTERTEMPLATE_PREFERENCES"/>
+		<field name="twitter_template" type="list" default="" label="COM_INSTANTFBLOGIN_TWITTER_TEMPLATE_INUSE" description="COM_INSTANTFBLOGIN_TWITTER_TEMPLATE_INUSE_DESC">
+			<option value="">COM_INSTANTFBLOGIN_TPL_DEFAULT</option>
+			<option value="_tpl_sdk">COM_INSTANTFBLOGIN_TPL_SDK</option>
+			<option value="_tpl_linear">COM_INSTANTFBLOGIN_TPL_LINEAR</option>
+			<option value="_tpl_compact">COM_INSTANTFBLOGIN_TPL_COMPACT</option>
+			<option value="_tpl_elegant">COM_INSTANTFBLOGIN_TPL_ELEGANT</option>
+			<option value="_tpl_nice">COM_INSTANTFBLOGIN_TPL_NICE</option>
+			<option value="_tpl_round">COM_INSTANTFBLOGIN_TPL_ROUND</option>
+			<option value="_tpl_smart">COM_INSTANTFBLOGIN_TPL_SMART</option>
+			<option value="_tpl_strong">COM_INSTANTFBLOGIN_TPL_STRONG</option>
+			<option value="_tpl_blank">COM_INSTANTFBLOGIN_TPL_BLANK</option>
+		</field>
+		<field name="use_custom_twitter_text" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGINCUSTOM_TWITTER_TEXT" description="COM_INSTANTFBLOGINCUSTOM_TWITTER_TEXT">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="custom_twitter_text" default="" type="text" label="COM_INSTANTFBLOGIN_USECUSTOM_TWITTER_TEXT" description="COM_INSTANTFBLOGIN_USECUSTOM_TWITTER_TEXT_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_LINKEDINTEMPLATE_PREFERENCES"/>
+		<field name="linkedin_template" type="list" default="" label="COM_INSTANTFBLOGIN_LINKEDIN_TEMPLATE_INUSE" description="COM_INSTANTFBLOGIN_LINKEDIN_TEMPLATE_INUSE_DESC">
+			<option value="">COM_INSTANTFBLOGIN_TPL_DEFAULT</option>
+			<option value="_tpl_sdk">COM_INSTANTFBLOGIN_TPL_SDK</option>
+			<option value="_tpl_compact">COM_INSTANTFBLOGIN_TPL_COMPACT</option>
+			<option value="_tpl_linear">COM_INSTANTFBLOGIN_TPL_LINEAR</option>
+			<option value="_tpl_nice">COM_INSTANTFBLOGIN_TPL_NICE</option>
+			<option value="_tpl_smart">COM_INSTANTFBLOGIN_TPL_SMART</option>
+			<option value="_tpl_strong">COM_INSTANTFBLOGIN_TPL_STRONG</option>
+			<option value="_tpl_blank">COM_INSTANTFBLOGIN_TPL_BLANK</option>
+		</field>
+		<field name="use_custom_linkedin_text" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGINCUSTOM_LINKEDIN_TEXT" description="COM_INSTANTFBLOGINCUSTOM_LINKEDIN_TEXT">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="custom_linkedin_text" default="" type="text" label="COM_INSTANTFBLOGIN_USECUSTOM_LINKEDIN_TEXT" description="COM_INSTANTFBLOGIN_USECUSTOM_LINKEDIN_TEXT_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_MODULE_PREFERENCES"/>
+		<field name="forgot_username_link" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_FIELD_FORGOTUSER_LABEL" description="COM_INSTANTFBLOGIN_FIELD_FORGOTUSER_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="forgot_password_link" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_FIELD_FORGOTPASSWORD_LABEL" description="COM_INSTANTFBLOGIN_FIELD_FORGOTPASSWORD_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="create_account_link" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_FIELD_CREATEACCOUNT_LABEL" description="COM_INSTANTFBLOGIN_FIELD_CREATEACCOUNT_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+   		<field name="remember_me" type="list"  default="0" label="COM_INSTANTFBLOGIN_FIELD_REMEMBERME_LABEL"  description="COM_INSTANTFBLOGIN_FIELD_REMEMBERME_LABEL_DESC">
+            <option value="0">COM_INSTANTFBLOGIN_FIELD_REMEMBERME_VALUE_SHOW_UNCHECKED</option>
+            <option value="1">COM_INSTANTFBLOGIN_FIELD_REMEMBERME_VALUE_SHOW_CHECKED</option>
+            <option value="2">COM_INSTANTFBLOGIN_FIELD_REMEMBERME_VALUE_HIDE_UNCHECKED</option>
+            <option value="3">COM_INSTANTFBLOGIN_FIELD_REMEMBERME_VALUE_HIDE_CHECKED</option>
+        </field>
+   		<field name="pretext" default="" type="editor" cols="30" rows="5" label="COM_INSTANTFBLOGIN_FIELD_PRE_TEXT_LABEL" description="COM_INSTANTFBLOGIN_FIELD_PRE_TEXT_DESC" />
+		<field name="posttext" default="" type="editor" cols="30" rows="5" label="COM_INSTANTFBLOGIN_FIELD_POST_TEXT_LABEL" description="COM_INSTANTFBLOGIN_FIELD_POST_TEXT_DESC" />
+	</fieldset>
+	
+	<fieldset name="socialshare" id="socialshare"  label="COM_INSTANTFBLOGIN_SOCIALSHARE">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GENERALSETTINGS_TITLE"/>
+		<field name="social_sharer_enabled" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_ENABLED" description="COM_INSTANTFBLOGIN_SOCIALSHARE_ENABLED_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="custom" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_CUSTOM" description="COM_INSTANTFBLOGIN_SOCIALSHARE_CUSTOM_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="position" type="list" default="2" label="COM_INSTANTFBLOGIN_SOCIALSHARE_POSITION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_POSITION_DESC">
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_BOTH</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_TOP</option>
+		   <option value="2">COM_INSTANTFBLOGIN_SOCIALSHARE_BOTTOM</option>
+		   <option value="3">COM_INSTANTFBLOGIN_SOCIALSHARE_NOTHING</option>
+		</field>
+		<field name="showInArticles" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_ARTICLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_ARTICLE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		
+		<field name="showInCategories" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_CATEGORY" description="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_CATEGORY_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		
+		<field name="showInFrontPage" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_FRONTPAGE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW_FRONTPAGE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="excludeSections" type="text" default="" size="40" label="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_SECTION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_SECTION_DESC" />
+		<field name="excludeCats" type="text" default="" size="40" label="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_CATEGORY" description="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_CATEGORY_DESC" />
+		<field name="excludeArticles" type="text" default="" size="40" label="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_ARTICLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_EXCLUDE_ARTICLE_DESC" />
+		<field name="includeArticles" type="text" default="" size="40" label="COM_INSTANTFBLOGIN_SOCIALSHARE_INCLUDE_ARTICLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_INCLUDE_ARTICLE_DESC" /> 
+	
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_TITLE"/>
+		<field name="facebookLikeButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+
+		<field name="facebookLikeAction" type="text" default="like" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BUTTON_TEXT" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BUTTON_TEXT_DESC" >
+		   <option value="like">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_LIKE</option>
+		   <option value="recommend">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_RECOMMEND</option>
+		</field>
+		<field name="facebookLikeType" type="list" default="button_count" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_TYPE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_TYPE_DESC" >
+			<option value="standard">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_STANDARD</option>
+		   <option value="box_count">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BOX_COUNT</option>
+		   <option value="button_count">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_BUTTON_COUNT</option>
+		</field>
+
+		<field name="facebookLikeColor" type="list" default="light" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_COLOR" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_COLOR_DESC" >
+		   <option value="light">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_LIGHT</option>
+		   <option value="dark">COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_DARK</option>
+		</field>
+
+		<field name="facebookLikeShowfaces" type="list" default="true" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_SHOWFACES" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_SHOWFACES_DESC" >
+		   <option value="false">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="true">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+
+		<field name="facebookLikeWidth" type="text" default="100" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_WIDTH" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_LIKE_WIDTH_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_TITLE"/>
+		<field name="facebookShareMeButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="facebookShareMeCounter" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_COUNTER" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_COUNTER_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="facebookShareMeBadgeText" type="color" default="#FFFFFF" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_TEXT_COLOR" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_TEXT_COLOR_DESC" />
+		<field name="facebookShareMeBadge" type="color" default="#3B5998" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_COLOR" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_COLOR_DESC" />
+		<field name="facebookShareMeBadgeLabel" type="text" default="Share" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_LABEL" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_SHAREME_LABEL_DESC" />
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_TITLE" />
+		<field name="twitterButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="twitterName" type="text" default="" size="40" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_NAME" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_NAME_DESC" />
+		<field name="twitterCounter" type="list" default="horizontal" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_COUNTER" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_COUNTER_DESC" >
+		   <option value="none">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="vertical">COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_VERTICAL</option>
+		   <option value="horizontal">COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_HORIZONTAL</option>
+		</field>
+		<field name="twitterSize" type="list" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_SIZE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_SIZE_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_FBAVATAR_SIZE_NORMAL</option>
+		   <option value="1">COM_INSTANTFBLOGIN_FBAVATAR_SIZE_LARGE</option>
+		</field>
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_TITLE"/>
+		<field name="linkedInButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="linkedInType" type="list" default="right" label="COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_TYPE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_TYPE_DESC" >
+		   <option value="none">COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_COUNTER_NONE</option>
+		   <option value="top">COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_COUNTER_TOP</option>
+		   <option value="right">COM_INSTANTFBLOGIN_SOCIALSHARE_LINKEDIN_COUNTER_RIGHT</option>
+		</field>  
+
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_TITLE"/>
+		<field name="plusButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="plusType" type="list" default="medium" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_STYLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_STYLE_DESC" >
+		   <option value="small">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_SMALL</option>
+		   <option value="medium">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_MEDIUM</option>
+		   <option value="">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_STANDARD</option>
+		   <option value="tall">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSONE_TALL</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSSHARE_TITLE"/>
+		<field name="gshareButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSSHARE_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_PLUSSHARE_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+		<field name="shareAnnotation" type="list" default="bubble" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION_DESC" >
+		   <option value="none">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION_NONE</option>
+		   <option value="bubble">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION_BUBBLE</option>
+		   <option value="inline">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION_INLINE</option>
+		   <option value="vertical-bubble">COM_INSTANTFBLOGIN_SOCIALSHARE_GOOGLE_SHARE_ANNOTATION_VBUBBLE</option>
+		</field>
+						
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_PINTEREST_TITLE"/>
+		<field name="pinterestButton" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SOCIALSHARE_PINTEREST_TITLE_BUTTON" description="COM_INSTANTFBLOGIN_SOCIALSHARE_PINTEREST_TITLE_BUTTON_DESC" >
+		   <option value="0">COM_INSTANTFBLOGIN_SOCIALSHARE_HIDE</option>
+		   <option value="1">COM_INSTANTFBLOGIN_SOCIALSHARE_SHOW</option>
+		</field>
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_instantfblogin/framework/html" id="metatags" name="metatags" label="COM_INSTANTFBLOGIN_CONFIG_METATAGS">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_OPENGRAPH_TITLE"/>
+		<field name="ogimage_detection" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_OGIMAGE_DETECTION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_OGIMAGE_DETECTION_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="ogtitle_detection" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_OGTITLE_DETECTION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_OGTITLE_DETECTION_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="ogdescription_detection" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_OGDESCRIPTION_DETECTION" description="COM_INSTANTFBLOGIN_SOCIALSHARE_OGDESCRIPTION_DETECTION_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="ogadditional_tags" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_OGADDITIONAL_TAGS" description="COM_INSTANTFBLOGIN_SOCIALSHARE_OGADDITIONAL_TAGS_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD"/>
+		<field name="twitter_card_enable" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_ENABLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_ENABLE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="twitter_card_site" default="" type="text" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_SITE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_SITE_DESC" />
+		<field name="twitter_card_creator" default="" type="text" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_CREATOR" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_CREATOR_DESC" />
+		<field name="twitter_card_type" type="radio" class="btn-group" default="summary" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_TYPE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_TYPE_DESC" >
+		   <option value="summary">COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_TYPE_SUMMARY</option>
+		   <option value="summary_large_image">COM_INSTANTFBLOGIN_SOCIALSHARE_TWITTER_CARD_TYPE_SUMMARY_LARGE_IMAGE</option>
+		</field>
+	</fieldset>
+	
+	<fieldset addfieldpath="/administrator/components/com_instantfblogin/framework/html" id="autoposting" name="autoposting" label="COM_INSTANTFBLOGIN_CONFIG_AUTOPOSTING">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_AUTO_POSTING"/>
+		<field name="facebookAutoPosting" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_AUTO_POSTING_ENABLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_FB_AUTO_POSTING_ENABLE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="gplusAutoPosting" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_GP_AUTO_POSTING_ENABLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_GP_AUTO_POSTING_ENABLE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+		<field name="twitterAutoPosting" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SOCIALSHARE_TW_AUTO_POSTING_ENABLE" description="COM_INSTANTFBLOGIN_SOCIALSHARE_TW_AUTO_POSTING_ENABLE_DESC" >
+		   <option value="0">JNO</option>
+		   <option value="1">JYES</option>
+		</field>
+	</fieldset>	
+	
+	<fieldset addfieldpath="/administrator/components/com_instantfblogin/framework/html" id="advanced" name="advanced" label="COM_INSTANTFBLOGIN_CONFIG_ADVANCED">
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_REDIRECTIONS"/>
+		<field name="login" default="" type="menuitem" disable="separator" label="COM_INSTANTFBLOGIN_FIELD_LOGIN_REDIRECTURL_LABEL" description="COM_INSTANTFBLOGIN_FIELD_LOGIN_REDIRECTURL_DESC" >
+			<option value="">JDEFAULT</option>
+		</field>
+		<field name="logout" default="" type="menuitem" disable="separator" label="COM_INSTANTFBLOGIN_FIELD_LOGOUT_REDIRECTURL_LABEL" description="COM_INSTANTFBLOGIN_FIELD_LOGOUT_REDIRECTURL_DESC" >
+			<option value="">JDEFAULT</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_FB_LOADING"/>
+   		<field name="custom_loading_msg" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_FIELD_CUSTOM_LOADING_MSG" description="COM_INSTANTFBLOGIN_FIELD_CUSTOM_LOADING_MSG_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="loading_msg" type="text" default="" label="COM_INSTANTFBLOGIN_FIELD_LOADING_MSG_LABEL" description="COM_INSTANTFBLOGIN_FIELD_LOADING_MSG_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_GREETINGS"/>
+		<field name="show_greetings_msg" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_SHOW_GREETINGS" description="COM_INSTANTFBLOGIN_SHOW_GREETINGS_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+		<field name="greetings_msg" type="textarea" rows="4" cols="20" default="" label="COM_INSTANTFBLOGIN_SHOW_GREETINGS_MSG" description="COM_INSTANTFBLOGIN_SHOW_GREETINGS_MSG_DESC" />
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_INTEGRATIONS_ADVANCED"/>
+		<field name="3pdintegration" type="list" default="" label="COM_INSTANTFBLOGIN_TPDINTEGRATION" description="COM_INSTANTFBLOGIN_TPDINTEGRATION_DESC">
+			<option value="">COM_INSTANTFBLOGIN_NO_INTEGRATIONS</option>
+			<option value="jomsocial">COM_INSTANTFBLOGIN_JOMSOCIAL_INTEGRATION</option>
+			<option value="easysocial">COM_INSTANTFBLOGIN_EASYSOCIAL_INTEGRATION</option>              
+			<option value="cbuilder">COM_INSTANTFBLOGIN_CBUILDER_INTEGRATION</option>
+			<option value="kunena">COM_INSTANTFBLOGIN_KUNENA_INTEGRATION</option>
+		</field>
+		<field name="3pdintegration_links" type="list" default="" label="COM_INSTANTFBLOGIN_TPDINTEGRATION_LINKS" description="COM_INSTANTFBLOGIN_TPDINTEGRATION_LINKS_DESC">
+			<option value="">COM_INSTANTFBLOGIN_NO_INTEGRATIONS</option>
+			<option value="jomsocial">COM_INSTANTFBLOGIN_JOMSOCIAL_INTEGRATION</option>
+			<option value="easysocial">COM_INSTANTFBLOGIN_EASYSOCIAL_INTEGRATION</option>              
+			<option value="cbuilder">COM_INSTANTFBLOGIN_CBUILDER_INTEGRATION</option>
+			<option value="kunena">COM_INSTANTFBLOGIN_KUNENA_INTEGRATION</option>
+			<option value="virtuemart">COM_INSTANTFBLOGIN_VIRTUEMART_INTEGRATION</option>
+		</field>
+		
+		<field type="spacer" class="label label-info spacer" label="COM_INSTANTFBLOGIN_CONFIG_ADVANCED_SETTINGS"/>
+		<field name="usefullname" type="radio" class="btn-group" default="name" label="COM_INSTANTFBLOGIN_FIELD_NAME_LABEL" description="COM_INSTANTFBLOGIN_FIELD_NAME_DESC">
+   			<option value="username">COM_INSTANTFBLOGIN_USER_NAME</option>              
+   			<option value="name">COM_INSTANTFBLOGIN_LONGNAME</option>
+   		</field>
+   		<field name="match_existing_users" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_MATCH_EXISTING_USERS" description="COM_INSTANTFBLOGIN_MATCH_EXISTING_USERS_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="allow_only_existing_users" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_ALLOW_ONLY_EXISTING_USERS" description="COM_INSTANTFBLOGIN_ALLOW_ONLY_EXISTING_USERS_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="new_usertype" type="aclgroupsmultiselect" default="" label="COM_JCHAT_NEWUSERS_GROUP" description="COM_JCHAT_NEWUSERS_GROUP_DESC" />
+		
+   		<field name="banned_email_address" type="textarea" rows="6" cols="30" label="COM_INSTANTFBLOGIN_BANNED_EMAIL" description="COM_INSTANTFBLOGIN_BANNED_EMAIL_DESC"/>
+		<field name="usesecure" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_FIELD_USESECURE_LABEL" description="COM_INSTANTFBLOGIN_FIELD_USESECURE_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="facebook_logout" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_DOFB_LOGOUT" description="COM_INSTANTFBLOGIN_DOFB_LOGOUT_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="sdkloadmode" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SDK_LOADMODE" description="COM_INSTANTFBLOGIN_SDK_LOADMODE_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		 	<option value="2">COM_INSTANTFBLOGIN_YES_OVERWRITE</option>
+		</field>
+		<field name="sdkversion" type="text" default="2.8" size="40" label="COM_INSTANTFBLOGIN_SDK_VERSION" description="COM_INSTANTFBLOGIN_SDK_VERSION_DESC" />
+
+		<field name="twitter_token_alwaysnew" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_TWITTER_TOKEN_ALWAYSNEW" description="COM_INSTANTFBLOGIN_TWITTER_TOKEN_ALWAYSNEW_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="auth_type" type="radio" class="btn-group" default="id" label="COM_INSTANTFBLOGIN_AUTH_TYPE" description="COM_INSTANTFBLOGIN_AUTH_TYPE_DESC">
+			<option value="id">COM_INSTANTFBLOGIN_AUTH_TYPE_FBID</option>
+		 	<option value="email">COM_INSTANTFBLOGIN_AUTH_TYPE_EMAIL</option>
+		</field>
+		<field name="curl_ssl_verifypeer" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_SSL_VERIFY" description="COM_INSTANTFBLOGIN_SSL_VERIFY_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="moduleclass_sfx" type="text" label="COM_INSTANTFBLOGIN_FIELD_MODULECLASS_SFX_LABEL" description="COM_INSTANTFBLOGIN_FIELD_MODULECLASS_SFX_DESC" />
+		<field name="header_class" type="text" label="COM_INSTANTFBLOGIN_FIELD_HEADER_CLASS_LABEL" description="COM_INSTANTFBLOGIN_FIELD_HEADER_CLASS_DESC" />
+		<field name="header_tag" type="headertag" default="h3" label="COM_INSTANTFBLOGIN_FIELD_HEADER_TAG_LABEL" description="COM_INSTANTFBLOGIN_FIELD_HEADER_TAG_DESC" />
+		
+		<field name="include_jquery" type="radio" class="btn-group" default="1" label="COM_INSTANTFBLOGIN_INCLUDE_JQUERY" description="COM_INSTANTFBLOGIN_INCLUDE_JQUERY_DESC">
+			<option value="0">JNO</option>
+		 	<option value="1">JYES</option>
+		</field>
+		<field name="enable_debug" type="radio" class="btn-group" default="0" label="COM_INSTANTFBLOGIN_ENABLE_DEBUG" description="COM_INSTANTFBLOGIN_ENABLE_DEBUG_DESC">
+   			<option value="0">JNO</option>              
+   			<option value="1">JYES</option>
+   		</field>
+	</fieldset>
+</config>

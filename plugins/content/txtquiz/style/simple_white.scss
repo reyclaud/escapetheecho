@@ -1,0 +1,80 @@
+div.tqQuestion{
+  position:relative;
+  padding:10px;
+  color:black;
+  background: white;
+  border:1px solid black;
+  border-top:3px solid black;
+  & span.tqHeader{
+    font-size:1.5em;
+  }
+  & img.tqFeedback{
+    float:right;
+  }
+  & input[type="radio"]{
+    display:inline-block;
+  }
+  & label{
+    display:inline-block;
+    margin-left:4px;
+    margin-bottom:5px;
+  }
+  & span.tqFeedbackMsg {
+
+  }
+
+  & .tqSubmit{
+    margin-top:10px;
+  }
+  & form{
+    margin-bottom:20px;
+  }
+
+}
+
+div.tqScoreBox{
+  position:relative;
+  padding:10px;
+  color:black;
+  background: white;
+  border:1px solid black;
+  border-top:3px solid black;
+  & span.tqHeader{
+    font-size:2em;
+  }
+  & img.tqGradeAll{
+    position:absolute;
+    right:10px;
+    top:5px;
+  }
+  & input[type="button"]{
+    margin-top:25px;
+    margin-bottom:25px;
+  }
+  & span.tqScoreBoxResults{
+    display:block;
+    min-height:40px;
+    width:97%;
+    background: rgba(235, 235, 235, 0.80);
+    border-radius:4px;
+    padding:10px;
+  }
+}
+
+div.tqFeedbackBar {
+  width: 100%;
+  display: block !important;
+  bottom: 10px !important;
+  height: 10px !important;
+  background-color: grey;
+  margin-bottom: 10px;
+  overflow: hidden;
+  border-radius: 4px;
+  position: relative;
+  & .tqColorBar {
+    width: 100%;
+    position: absolute;
+    height: 10px;
+    right: 100%;
+  }
+}

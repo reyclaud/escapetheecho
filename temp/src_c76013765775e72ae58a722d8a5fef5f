@@ -1,0 +1,71 @@
+<?php
+defined('_JEXEC') or die;
+function src_c76013765775e72ae58a722d8a5fef5f($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+ 
+echo 'here' ;  
+echo 'You ar user' .$user->id.'! Welcome!'; 
+
+ 
+  
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions')); 
+
+ 
+$query->where($db->quoteName('UserId') ." = ". $user->id); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+  
+
+ 
+$query2 = $db->getQuery(true); 
+
+ 
+$query2->select('*'); 
+
+ 
+$query2->from($db->quoteName('jos_users')); 
+
+ 
+$db->setQuery($query2); 
+
+ 
+  
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+foreach($result as key =>value){ 
+
+ 
+echo $value['email']; 
+
+ 
+};
+;return get_defined_vars();
+;}

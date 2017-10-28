@@ -1,0 +1,2121 @@
+<?php
+defined('_JEXEC') or die;
+function src_597ba47f0313dc4023952fcfe5430aba($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+echo="test"; 
+
+ 
+// You can place PHP like this 
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+ //COUNT ANSWER #1 
+
+ 
+$count2 = $db->getQuery(true); 
+
+ 
+$count2->select('COUNT(*)'); 
+
+ 
+$count2->from($db->quoteName('jos_rsform_submission_values'));  
+
+ 
+$count2->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count2->where($db->quoteName('FormId') ." = ". '61');  
+
+ 
+$count2->where($db->quoteName('FieldValue') ." LIKE ". "'%". "only chase power to steal from us" ."%'");  
+
+ 
+$db->setQuery($count2); 
+
+ 
+$count_result1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count1 = $db->getQuery(true); 
+
+ 
+$count1->select('COUNT(*)'); 
+
+ 
+$count1->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count1->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count1->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count1->where($db->quoteName('FieldValue') ." LIKE ". "'%". "are unfairly abused because they all try their hardest at an impossible job" ."%'"); 
+
+ 
+$db->setQuery($count1); 
+
+ 
+$count_result2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count3 = $db->getQuery(true); 
+
+ 
+$count3->select('COUNT(*)'); 
+
+ 
+$count3->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count3->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count3->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count3->where($db->quoteName('FieldValue') ." LIKE ". "'%". "get into politics with good intention but are corrupted by the system" ."%'"); 
+
+ 
+$db->setQuery($count3); 
+
+ 
+$count_result3= $db->loadResult(); 
+
+ 
+  
+
+ 
+$count4 = $db->getQuery(true); 
+
+ 
+$count4->select('COUNT(*)'); 
+
+ 
+$count4->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count4->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count4->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count4->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($count4); 
+
+ 
+$count_result4= $db->loadResult(); 
+
+ 
+  
+
+ 
+  //COUNT ANSWER #2 
+
+ 
+$q2 = $db->getQuery(true); 
+
+ 
+$q2->select('COUNT(*)'); 
+
+ 
+$q2->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q2->where($db->quoteName('FieldName') ."=". "'"."Q1"."'"); 
+
+ 
+$q2->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q2->where($db->quoteName('FieldValue') ." LIKE ". "'%". "not at all" ."%'"); 
+
+ 
+$db->setQuery($q2); 
+
+ 
+$q2_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q3 = $db->getQuery(true); 
+
+ 
+$q3->select('COUNT(*)'); 
+
+ 
+$q3->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q3->where($db->quoteName('FieldName') ."=". "'"."Q1"."'"); 
+
+ 
+$q3->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q3->where($db->quoteName('FieldValue') ." LIKE ". "'%". "a medium amount" ."%'"); 
+
+ 
+$db->setQuery($q3); 
+
+ 
+$q2_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q4 = $db->getQuery(true); 
+
+ 
+$q4->select('COUNT(*)'); 
+
+ 
+$q4->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q4->where($db->quoteName('FieldName') ."=". "'"."Q1"."'"); 
+
+ 
+$q4->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q4->where($db->quoteName('FieldValue') ." LIKE ". "'%". "a lot" ."%'"); 
+
+ 
+$db->setQuery($q4); 
+
+ 
+$q2_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+//COUNT ANSWER #3 
+
+ 
+$q5 = $db->getQuery(true); 
+
+ 
+$q5->select('COUNT(*)'); 
+
+ 
+$q5->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q5->where($db->quoteName('FieldName') ."=". "'"."Q2"."'"); 
+
+ 
+$q5->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q5->where($db->quoteName('FieldValue') ." LIKE ". "'%". "not at all" ."%'"); 
+
+ 
+$db->setQuery($q5); 
+
+ 
+$q3_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q6 = $db->getQuery(true); 
+
+ 
+$q6->select('COUNT(*)'); 
+
+ 
+$q6->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q6->where($db->quoteName('FieldName') ."=". "'"."Q2"."'"); 
+
+ 
+$q6->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q6->where($db->quoteName('FieldValue') ." LIKE ". "'%". "a medium amount" ."%'"); 
+
+ 
+$db->setQuery($q6); 
+
+ 
+$q3_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q7 = $db->getQuery(true); 
+
+ 
+$q7->select('COUNT(*)'); 
+
+ 
+$q7->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q7->where($db->quoteName('FieldName') ."=". "'"."Q2"."'"); 
+
+ 
+$q7->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q7->where($db->quoteName('FieldValue') ." LIKE ". "'%". "a lot" ."%'"); 
+
+ 
+$db->setQuery($q7); 
+
+ 
+  
+
+ 
+$q3_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+ //COUNT ANSWER #4 
+
+ 
+$q8 = $db->getQuery(true); 
+
+ 
+$q8->select('COUNT(*)'); 
+
+ 
+$q8->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q8->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q8->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q8->where($db->quoteName('FieldValue') ." LIKE ". "'%". "the politicians" ."%'"); 
+
+ 
+$db->setQuery($q8); 
+
+ 
+$q4_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q9 = $db->getQuery(true); 
+
+ 
+$q9->select('COUNT(*)'); 
+
+ 
+$q9->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q9->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q9->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q9->where($db->quoteName('FieldValue') ." LIKE ". "'%". "big business and the banks" ."%'"); 
+
+ 
+$db->setQuery($q9); 
+
+ 
+$q4_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q10 = $db->getQuery(true); 
+
+ 
+$q10->select('COUNT(*)'); 
+
+ 
+$q10->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q10->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q10->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q10->where($db->quoteName('FieldValue') ." LIKE ". "'%". "the media" ."%'"); 
+
+ 
+$db->setQuery($q10); 
+
+ 
+$q4_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q11 = $db->getQuery(true); 
+
+ 
+$q11->select('COUNT(*)'); 
+
+ 
+$q11->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q11->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q11->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q11->where($db->quoteName('FieldValue') ." LIKE ". "'%". "we, the people" ."%'"); 
+
+ 
+$db->setQuery($q11); 
+
+ 
+ $q4_choice4= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q12 = $db->getQuery(true); 
+
+ 
+$q12->select('COUNT(*)'); 
+
+ 
+$q12->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q12->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q12->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q12->where($db->quoteName('FieldValue') ." LIKE ". "'%". "a few invisible people who we will never know" ."%'"); 
+
+ 
+$db->setQuery($q12); 
+
+ 
+$q4_choice5= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q13 = $db->getQuery(true); 
+
+ 
+$q13->select('COUNT(*)'); 
+
+ 
+$q13->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q13->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q13->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q13->where($db->quoteName('FieldValue') ." LIKE ". "'%". "no one" ."%'"); 
+
+ 
+$db->setQuery($q13); 
+
+ 
+$q4_choice6= $db->loadResult(); 
+
+ 
+  
+
+ 
+ $q14 = $db->getQuery(true); 
+
+ 
+$q14->select('COUNT(*)'); 
+
+ 
+$q14->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q14->where($db->quoteName('FieldName') ."=". "'"."MostlyControlledBy"."'"); 
+
+ 
+$q14->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q14->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q14); 
+
+ 
+$q4_choice7= $db->loadResult(); 
+
+ 
+  
+
+ 
+ //COUNT ANSWER #5 
+
+ 
+$q15 = $db->getQuery(true); 
+
+ 
+$q15->select('COUNT(*)'); 
+
+ 
+$q15->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q15->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q15->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q15->where($db->quoteName('FieldValue') ." LIKE ". "'%". "bad politicians" ."%'"); 
+
+ 
+$db->setQuery($q15); 
+
+ 
+$q5_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q16 = $db->getQuery(true); 
+
+ 
+$q16->select('COUNT(*)'); 
+
+ 
+$q16->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q16->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q16->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q16->where($db->quoteName('FieldValue') ." LIKE ". "'%". "the way we get our news" ."%'"); 
+
+ 
+$db->setQuery($q16); 
+
+ 
+$q5_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q17 = $db->getQuery(true); 
+
+ 
+$q17->select('COUNT(*)'); 
+
+ 
+$q17->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q17->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q17->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q17->where($db->quoteName('FieldValue') ." LIKE ". "'%". "threat of dictatorship" ."%'"); 
+
+ 
+$db->setQuery($q17); 
+
+ 
+$q5_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q18 = $db->getQuery(true); 
+
+ 
+$q18->select('COUNT(*)'); 
+
+ 
+$q18->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q18->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q18->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q18->where($db->quoteName('FieldValue') ." LIKE ". "'%". "low quality education" ."%'"); 
+
+ 
+$db->setQuery($q18); 
+
+ 
+$q5_choice4 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q19 = $db->getQuery(true); 
+
+ 
+$q19->select('COUNT(*)'); 
+
+ 
+$q19->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q19->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q19->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q19->where($db->quoteName('FieldValue') ." LIKE ". "'%". "threat of war" ."%'"); 
+
+ 
+$db->setQuery($q19); 
+
+ 
+$q5_choice5 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q20 = $db->getQuery(true); 
+
+ 
+$q20->select('COUNT(*)'); 
+
+ 
+$q20->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q20->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q20->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q20->where($db->quoteName('FieldValue') ." LIKE ". "'%". "spread of nuclear weapons" ."%'"); 
+
+ 
+$db->setQuery($q20); 
+
+ 
+$q5_choice6 = $db->loadResult(); 
+
+ 
+  
+
+ 
+  
+
+ 
+$q21 = $db->getQuery(true); 
+
+ 
+$q21->select('COUNT(*)'); 
+
+ 
+$q21->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q21->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q21->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q21->where($db->quoteName('FieldValue') ." LIKE ". "'%". "our energy running out" ."%'"); 
+
+ 
+$db->setQuery($q21); 
+
+ 
+$q5_choice7 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q22 = $db->getQuery(true); 
+
+ 
+$q22->select('COUNT(*)'); 
+
+ 
+$q22->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q22->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q22->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q22->where($db->quoteName('FieldValue') ." LIKE ". "'%". "poor economy and lack of jobs" ."%'"); 
+
+ 
+$db->setQuery($q22); 
+
+ 
+ $q5_choice8 = $db->loadResult(); 
+
+ 
+   
+
+ 
+$q24 = $db->getQuery(true); 
+
+ 
+$q24->select('COUNT(*)'); 
+
+ 
+$q24->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q24->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q24->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q24->where($db->quoteName('FieldValue') ." LIKE ". "'%". "population growth" ."%'"); 
+
+ 
+$db->setQuery($q24); 
+
+ 
+$q5_choice10 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q25 = $db->getQuery(true); 
+
+ 
+$q25->select('COUNT(*)'); 
+
+ 
+$q25->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q25->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q25->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q25->where($db->quoteName('FieldValue') ." LIKE ". "'%". "lack of clean drinking water" ."%'"); 
+
+ 
+$db->setQuery($q25); 
+
+ 
+$q5_choice11 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q26 = $db->getQuery(true); 
+
+ 
+$q26->select('COUNT(*)'); 
+
+ 
+$q26->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q26->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q26->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q26->where($db->quoteName('FieldValue') ." LIKE ". "'%". "poverty and hunger" ."%'"); 
+
+ 
+$db->setQuery($q26); 
+
+ 
+$q5_choice12 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q27 = $db->getQuery(true); 
+
+ 
+$q27->select('COUNT(*)'); 
+
+ 
+$q27->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q27->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q27->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q27->where($db->quoteName('FieldValue') ." LIKE ". "'%". "religious extremism" ."%'"); 
+
+ 
+$db->setQuery($q27); 
+
+ 
+$q5_choice13 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q28 = $db->getQuery(true); 
+
+ 
+$q28->select('COUNT(*)'); 
+
+ 
+$q28->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q28->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q28->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q28->where($db->quoteName('FieldValue') ." LIKE ". "'%". "immigration" ."%'"); 
+
+ 
+$db->setQuery($q28); 
+
+ 
+$q5_choice14 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q29 = $db->getQuery(true); 
+
+ 
+$q29->select('COUNT(*)'); 
+
+ 
+$q29->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q29->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q29->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q29->where($db->quoteName('FieldValue') ." LIKE ". "'%". "still unfinished wars" ."%'"); 
+
+ 
+$db->setQuery($q29); 
+
+ 
+$q5_choice15 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q30 = $db->getQuery(true); 
+
+ 
+$q30->select('COUNT(*)'); 
+
+ 
+$q30->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q30->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q30->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q30->where($db->quoteName('FieldValue') ." LIKE ". "'%". "infectious diseases" ."%'"); 
+
+ 
+$db->setQuery($q30); 
+
+ 
+$q5_choice16 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q31 = $db->getQuery(true); 
+
+ 
+$q31->select('COUNT(*)'); 
+
+ 
+$q31->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q31->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q31->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q31->where($db->quoteName('FieldValue') ." LIKE ". "'%". "terrorism" ."%'"); 
+
+ 
+$db->setQuery($q31); 
+
+ 
+$q5_choice17 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q32 = $db->getQuery(true); 
+
+ 
+$q32->select('COUNT(*)'); 
+
+ 
+$q32->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q32->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q32->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q32->where($db->quoteName('FieldValue') ." LIKE ". "'%". "lack of religious faith" ."%'"); 
+
+ 
+$db->setQuery($q32); 
+
+ 
+$q5_choice18 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q33 = $db->getQuery(true); 
+
+ 
+$q33->select('COUNT(*)'); 
+
+ 
+$q33->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q33->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q33->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q33->where($db->quoteName('FieldValue') ." LIKE ". "'%". "threat of alien invasion" ."%'"); 
+
+ 
+$db->setQuery($q33); 
+
+ 
+$q5_choice19 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q34 = $db->getQuery(true); 
+
+ 
+$q34->select('COUNT(*)'); 
+
+ 
+$q34->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q34->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q34->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q34->where($db->quoteName('FieldValue') ." LIKE ". "'%". "climate change" ."%'"); 
+
+ 
+$db->setQuery($q34); 
+
+ 
+$q5_choice20 = $db->loadResult(); 
+
+ 
+  
+
+ 
+$q35 = $db->getQuery(true); 
+
+ 
+$q35->select('COUNT(*)'); 
+
+ 
+$q35->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q35->where($db->quoteName('FieldName') ."=". "'"."InOrderOfSize"."'"); 
+
+ 
+$q35->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q35->where($db->quoteName('FieldValue') ." LIKE ". "'%". "refugees" ."%'"); 
+
+ 
+$db->setQuery($q35); 
+
+ 
+$q5_choice21 = $db->loadResult(); 
+
+ 
+  
+
+ 
+ //COUNT ANSWER #6 
+
+ 
+$q36 = $db->getQuery(true); 
+
+ 
+$q36->select('COUNT(*)'); 
+
+ 
+$q36->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q36->where($db->quoteName('FieldName') ."=". "'"."TypeOfGovernment"."'"); 
+
+ 
+$q36->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q36->where($db->quoteName('FieldValue') ." LIKE ". "'%". "run by an efficient and kindly dictator" ."%'"); 
+
+ 
+$db->setQuery($q36); 
+
+ 
+$q6_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q37 = $db->getQuery(true); 
+
+ 
+$q37->select('COUNT(*)'); 
+
+ 
+$q37->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q37->where($db->quoteName('FieldName') ."=". "'"."TypeOfGovernment"."'"); 
+
+ 
+$q37->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q37->where($db->quoteName('FieldValue') ." LIKE ". "'%". "democratically chosen by the people" ."%'"); 
+
+ 
+$db->setQuery($q37); 
+
+ 
+$q6_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q38 = $db->getQuery(true); 
+
+ 
+$q38->select('COUNT(*)'); 
+
+ 
+$q38->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q38->where($db->quoteName('FieldName') ."=". "'"."TypeOfGovernment"."'"); 
+
+ 
+$q38->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q38->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q38);  
+
+ 
+$q6_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+//COUNT ANSWER #7 
+
+ 
+$q39 = $db->getQuery(true); 
+
+ 
+$q39->select('COUNT(*)'); 
+
+ 
+$q39->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q39->where($db->quoteName('FieldName') ."=". "'"."YouPreferTo"."'"); 
+
+ 
+$q39->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q39->where($db->quoteName('FieldValue') ." LIKE ". "'%". "poor living in a democracy" ."%'"); 
+
+ 
+$db->setQuery($q39); 
+
+ 
+$q7_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q40 = $db->getQuery(true); 
+
+ 
+$q40->select('COUNT(*)'); 
+
+ 
+$q40->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q40->where($db->quoteName('FieldName') ."=". "'"."YouPreferTo"."'"); 
+
+ 
+$q40->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q40->where($db->quoteName('FieldValue') ." LIKE ". "'%". "rich living in a dictatorship" ."%'"); 
+
+ 
+$db->setQuery($q40); 
+
+ 
+$q7_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q41 = $db->getQuery(true); 
+
+ 
+$q41->select('COUNT(*)'); 
+
+ 
+$q41->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q41->where($db->quoteName('FieldName') ."=". "'"."YouPreferTo"."'"); 
+
+ 
+$q41->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q41->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q41); 
+
+ 
+$q7_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+//COUNT ANSWER #8 
+
+ 
+$q43 = $db->getQuery(true); 
+
+ 
+$q43->select('COUNT(*)'); 
+
+ 
+$q43->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q43->where($db->quoteName('FieldName') ."=". "'"."PowerForTheGreaterGood "."'"); 
+
+ 
+$q43->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q43->where($db->quoteName('FieldValue') ." LIKE ". "'%". "no" ."%'"); 
+
+ 
+$db->setQuery($q43); 
+
+ 
+$q8_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q44 = $db->getQuery(true); 
+
+ 
+$q44->select('COUNT(*)'); 
+
+ 
+$q44->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q44->where($db->quoteName('FieldName') ."=". "'"."PowerForTheGreaterGood "."'"); 
+
+ 
+$q44->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q44->where($db->quoteName('FieldValue') ." LIKE ". "'%". "yes" ."%'"); 
+
+ 
+$db->setQuery($q44); 
+
+ 
+$q8_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q45 = $db->getQuery(true); 
+
+ 
+$q45->select('COUNT(*)'); 
+
+ 
+$q45->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q45->where($db->quoteName('FieldName') ."=". "'"."PowerForTheGreaterGood "."'"); 
+
+ 
+$q45->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q45->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q45); 
+
+ 
+$q8_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+//COUNT ANSWER #9 
+
+ 
+$q46 = $db->getQuery(true); 
+
+ 
+$q46->select('COUNT(*)'); 
+
+ 
+$q46->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q46->where($db->quoteName('FieldName') ."=". "'"."Governments "."'"); 
+
+ 
+$q46->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q46->where($db->quoteName('FieldValue') ." LIKE ". "'%". "yes" ."%'"); 
+
+ 
+$db->setQuery($q46); 
+
+ 
+$q9_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q47 = $db->getQuery(true); 
+
+ 
+$q47->select('COUNT(*)'); 
+
+ 
+$q47->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q47->where($db->quoteName('FieldName') ."=". "'"."Governments"."'"); 
+
+ 
+$q47->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q47->where($db->quoteName('FieldValue') ." LIKE ". "'%". "not necessarily" ."%'"); 
+
+ 
+$db->setQuery($q47); 
+
+ 
+$q9_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q48 = $db->getQuery(true); 
+
+ 
+$q48->select('COUNT(*)'); 
+
+ 
+$q48->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q48->where($db->quoteName('FieldName') ."=". "'"."Governments"."'"); 
+
+ 
+$q48->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q48->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q48); 
+
+ 
+$q9_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+//COUNT ANSWER #10 
+
+ 
+$q49 = $db->getQuery(true); 
+
+ 
+$q49->select('COUNT(*)'); 
+
+ 
+$q49->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q49->where($db->quoteName('FieldName') ."=". "'"."Nationalism"."'"); 
+
+ 
+$q49->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q49->where($db->quoteName('FieldValue') ." LIKE ". "'%". "is good for all countries" ."%'"); 
+
+ 
+$db->setQuery($q49); 
+
+ 
+  
+
+ 
+$q10_choice1= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q50 = $db->getQuery(true); 
+
+ 
+$q50->select('COUNT(*)'); 
+
+ 
+$q50->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q50->where($db->quoteName('FieldName') ."=". "'"."Nationalism"."'"); 
+
+ 
+$q50->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q50->where($db->quoteName('FieldValue') ." LIKE ". "'%". "is bad because it creates a sense of superiority and often war" ."%'"); 
+
+ 
+$db->setQuery($q50); 
+
+ 
+  
+
+ 
+  
+
+ 
+$q10_choice2= $db->loadResult(); 
+
+ 
+  
+
+ 
+$q51 = $db->getQuery(true); 
+
+ 
+$q51->select('COUNT(*)'); 
+
+ 
+$q51->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$q51->where($db->quoteName('FieldName') ."=". "'"."Nationalism"."'"); 
+
+ 
+$q51->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$q51->where($db->quoteName('FieldValue') ." LIKE ". "'%". "I’m unsure" ."%'"); 
+
+ 
+$db->setQuery($q51); 
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+$q10_choice3= $db->loadResult(); 
+
+ 
+  
+
+ 
+echo "<br>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'>"; 
+
+ 
+  
+
+ 
+echo "<h1 style='display:inline;'>Quiz Title: </h1> Power & Politics"; 
+
+ 
+  
+
+ 
+echo "</div>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'> 
+
+ 
+  
+
+ 
+<br>  
+
+ 
+  
+
+ 
+<table class='personal-data' style='width: 100%;'> 
+
+ 
+  
+
+ 
+<tbody> 
+
+ 
+  
+
+ 
+<tr> 
+
+ 
+  
+
+ 
+<td><strong>Questions</strong></td> 
+
+ 
+  
+
+ 
+<td><strong>Answers</strong></td> 
+
+ 
+  
+
+ 
+</tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>1.) Politicians</td> 
+
+ 
+<td>A. only chase power to steal from us - "; 
+
+ 
+ echo "(".$count_result1 . ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. are unfairly abused because they all try their hardest at an impossible job - "; 
+
+ 
+echo "(".$count_result2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. get into politics with good intention but are corrupted by the system - "; 
+
+ 
+echo "(".$count_result3 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$count_result4 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>2.) How much do you follow the politics of the country ?</td>"; 
+
+ 
+echo "<td>";  
+
+ 
+echo "A. Not at all - "; 
+
+ 
+echo "(".$q2_choice1 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "B. A medium amount - "; 
+
+ 
+echo "(".$q2_choice2 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. A lot - "; 
+
+ 
+echo "(".$q2_choice3 . ") counts";  
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>3.) How much do you follow international politics ?</td>"; 
+
+ 
+echo "<td>";  
+
+ 
+echo "A. Not at all - "; 
+
+ 
+echo "(".$q3_choice1 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "B. A medium amount - "; 
+
+ 
+echo "(".$q3_choice2 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. A lot - "; 
+
+ 
+echo "(".$q3_choice3 . ") counts";  
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>4.) The world is mostly controlled by</td>"; 
+
+ 
+echo "<td>";  
+
+ 
+echo "A. the politicians - "; 
+
+ 
+echo "(".$q4_choice1 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "B. big business and the banks - "; 
+
+ 
+echo "(".$q4_choice2 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. the media - "; 
+
+ 
+echo "(".$q4_choice3 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "D. we, the people - "; 
+
+ 
+echo "(".$q4_choice4 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "E. a few invisible people who we will never know - "; 
+
+ 
+echo "(".$q4_choice5 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "F. no one - "; 
+
+ 
+echo "(".$q4_choice6 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q4_choice7 . ") counts";  
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+ echo "<tr> 
+
+ 
+<td>5.) Please 'click, drag and drop' these global challenges into the box below in order of size and importance</td>"; 
+
+ 
+echo "<td>";  
+
+ 
+echo "A. bad politicians - "; 
+
+ 
+echo "(".$q5_choice1 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "B. the way we get our news - "; 
+
+ 
+echo "(".$q5_choice2 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "C. threat of dictatorship - "; 
+
+ 
+echo "(".$q5_choice3 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "D. low quality education - "; 
+
+ 
+echo "(".$q5_choice4 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "E. threat of war - "; 
+
+ 
+echo "(".$q5_choice5 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "F. spread of nuclear weapons - "; 
+
+ 
+echo "(".$q5_choice6 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "G. our energy running out - "; 
+
+ 
+echo "(".$q5_choice7 . ") counts";  
+
+ 
+echo "<br>"; 
+
+ 
+echo "H. poor economy and lack of jobs - "; 
+
+ 
+echo "(".$q5_choice8 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "I. population growth - "; 
+
+ 
+echo "(".$q5_choice10 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "J. lack of clean drinking water - "; 
+
+ 
+echo "(".$q5_choice11 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "K. poverty and hunger - "; 
+
+ 
+echo "(".$q5_choice12 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "L. religious extremism - "; 
+
+ 
+echo "(".$q5_choice13 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "M. immigration - "; 
+
+ 
+echo "(".$q5_choice14 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "N. still unfinished wars - "; 
+
+ 
+echo "(".$q5_choice15 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "O. infectious diseases - "; 
+
+ 
+echo "(".$q5_choice16 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "P. terrorism - "; 
+
+ 
+echo "(".$q5_choice17 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "Q. lack of religious faith - "; 
+
+ 
+echo "(".$q5_choice18 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "R. threat of alien invasion - "; 
+
+ 
+echo "(".$q5_choice19 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "S. climate change - "; 
+
+ 
+echo "(".$q5_choice20 . ") counts";  
+
+ 
+ echo "<br>"; 
+
+ 
+echo "T. refugees - "; 
+
+ 
+echo "(".$q5_choice21 . ") counts";  
+
+ 
+ echo "<br>";  
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>6.) The best type of government is</td> 
+
+ 
+<td>A. run by an efficient and kindly dictator - "; 
+
+ 
+ echo "(".$q6_choice1. ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. democratically chosen by the people - "; 
+
+ 
+echo "(".$q6_choice2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q6_choice3 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>7.) Would you prefer to be</td> 
+
+ 
+<td>A. poor living in a democracy - "; 
+
+ 
+ echo "(".$q7_choice1. ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. rich living in a dictatorship - "; 
+
+ 
+echo "(".$q7_choice2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q7_choice3 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "<tr> 
+
+ 
+<td>8.) Should all countries share some power for the greater good ?</td> 
+
+ 
+<td>A. No - "; 
+
+ 
+ echo "(".$q8_choice1. ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. Yes - "; 
+
+ 
+echo "(".$q8_choice2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q8_choice3 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+ echo "<tr> 
+
+ 
+<td>9.) Should all governments be separate from all religions ?</td> 
+
+ 
+<td>A. Yes - "; 
+
+ 
+ echo "(".$q9_choice1. ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. Not necessarily - "; 
+
+ 
+echo "(".$q9_choice2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q9_choice3 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+ echo "<tr> 
+
+ 
+<td>10.) Nationalism</td> 
+
+ 
+<td>A. is good for all countries- "; 
+
+ 
+ echo "(".$q10_choice1. ") counts"; 
+
+ 
+ echo "<br>"; 
+
+ 
+echo "B. is bad because it creates a sense of superiority and often war - "; 
+
+ 
+echo "(".$q10_choice2 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+echo "X. I’m unsure - "; 
+
+ 
+echo "(".$q10_choice3 . ") counts"; 
+
+ 
+echo "</td></tr>"; 
+
+ 
+  
+
+ 
+echo "</tbody> </table> </div>";
+;return get_defined_vars();
+;}

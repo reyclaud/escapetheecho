@@ -1,0 +1,76 @@
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.example li.placeholder {
+    position: relative;
+    /** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+    /** Define arrowhead **/
+}
+
+.questions-wrap {
+    width: 30%;
+    float: left;
+}
+
+.option-sort-wrap {
+    width: 30%;
+    float: left;
+    margin-left: 1%;
+    min-height: 50px;
+}
+
+.licket-questions{
+    margin-top: 20px;
+}
+
+.scale-left {
+    float: left;
+    font-weight: bold;
+}
+
+.scale-right {
+    float: right;
+    font-weight: bold;
+}
+
+.ty-wrapper img {
+    width: 180px;
+    position: absolute;
+    z-index: 999;
+    left: calc(50% - 90px);
+    display: none;
+    margin-top: 50px;
+}
+
+.ty-wrapper{
+    text-align: center;
+    border: 1px dashed #999999;
+    position: relative;
+    height: 210px;
+}
+
+ol.simple_with_animation.dropbox { 
+    position: absolute;
+    min-height: 160px;
+    width: 570px;
+    display: block;
+}
+
+.sorts,
+.not-serious-sorts{
+    font-weight: bold;    
+}
+
+.not-serious-sorts{
+    margin-top: 30px;
+}

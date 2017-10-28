@@ -1,0 +1,174 @@
+<?php
+defined('_JEXEC') or die;
+function src_b9d3f2e58804a56575461189f6eae8f2($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+  
+
+ 
+  
+
+ 
+$db = JFactory::getDbo(); 
+
+ 
+$count2 = $db->getQuery(true); 
+
+ 
+  
+
+ 
+$count2->select('COUNT(*)'); 
+
+ 
+$count2->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$count2->where($db->quoteName('FieldName') ."=". "'"."Politicians"."'"); 
+
+ 
+$count2->where($db->quoteName('FormId') ." = ". '61'); 
+
+ 
+$count2->where($db->quoteName('FieldValue') ." LIKE ". "'%". "only chase power to steal from us" ."%'"); 
+
+ 
+$db->setQuery($count2); 
+
+ 
+$count_result3= $db->loadResult(); 
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+echo "<br>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'>"; 
+
+ 
+  
+
+ 
+echo "<h4 style='display:inline;'>Quiz Title: </h4> Power & Politics"; 
+
+ 
+  
+
+ 
+echo "</div>"; 
+
+ 
+  
+
+ 
+echo "<div class='pd-holder'> 
+
+ 
+  
+
+ 
+<br> 
+
+ 
+  
+
+ 
+<h1>Quizzes Taken</h1> 
+
+ 
+  
+
+ 
+<br> 
+
+ 
+  
+
+ 
+<table class='personal-data' style='width: 100%;'> 
+
+ 
+  
+
+ 
+<tbody> 
+
+ 
+  
+
+ 
+<tr> 
+
+ 
+  
+
+ 
+<td><strong>Questions</strong></td> 
+
+ 
+  
+
+ 
+<td><strong>Answers</strong></td> 
+
+ 
+  
+
+ 
+</tr>"; 
+
+ 
+ <tr> 
+
+ 
+<td>Politicians</td> 
+
+ 
+<td>A. only chase power to steal from us - echo "(".$count_result3 . ") counts"; 
+
+ 
+echo "<br>"; 
+
+ 
+</td> 
+
+ 
+</tr> 
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+  
+
+ 
+echo "</tbody> </table> </div>";
+;return get_defined_vars();
+;}

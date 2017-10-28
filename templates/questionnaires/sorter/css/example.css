@@ -1,0 +1,130 @@
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+ol.example li.placeholder {
+    position: relative;
+    /** More li styles **/
+}
+ol.example li.placeholder:before {
+    position: absolute;
+    /** Define arrowhead **/
+}
+
+.questions-wrap {
+    width: 30%;
+    float: left;
+}
+
+.option-sort-wrapper {
+    width: 35%;
+    float: left;
+    margin-left: 1%;
+    min-height: 50px;
+    margin-right: 8px;    
+    margin-top: 20px;
+}
+
+.option-sort-wrap {
+    width: 100%;        
+    /*background: url("../images/arrow-down.png") no-repeat;*/
+    background: url("../images/arrow-down-tr-small.png")  no-repeat;
+    background-position: center 50px;
+    background-size: 26px auto;
+    max-width: 340px;
+    margin: auto;
+}
+
+.option-sort-wrap.no-bg{
+    background: none;
+    /*background-image: url("../images/arrow-down-tr.png");*/
+}
+
+.licket-questions{
+    margin-top: 20px;
+}
+
+.scale-left {
+    float: left;
+    font-weight: bold;
+}
+
+.scale-right {
+    float: right;
+    font-weight: bold;
+}
+
+.ty-wrapper img {
+    width: 180px;
+    position: absolute;
+    z-index: 999;
+    left: calc(50% - 90px);
+    display: none;
+    margin-top: 50px;
+}
+
+.ty-wrapper{
+    text-align: center;
+    border: solid 3px #0467be;
+    position: relative;
+    height: 185px;
+    border-radius: 9px;
+}
+
+ol.simple_with_animation.dropbox { 
+    /*position: absolute;*/
+    /*min-height: 160px;*/
+    width: 100%;
+    height: 115px;
+    display: block;
+    margin-top: 30px;
+}
+
+ol.simple_with_animation.dropbox li div.rsformVerticalClear{
+    /*margin-top: 50px;*/
+}
+
+ol.simple_with_animation li input[type=checkbox]{
+    display: none;
+}
+
+.sorts,
+.not-serious-sorts{
+    font-weight: bold;
+    width: 220px;
+    margin: 7px auto 0;
+    min-height: 36px;
+    font-size: 16px;
+}
+
+.not-serious-sorts{
+    margin-top: 30px;
+}
+
+.drag-drop-formbody{
+    width: 20%;
+    float: left !important;
+    /*min-width: 288px;*/
+    min-width: 242px;
+}
+
+.thankyou-wrap{
+    position: absolute;
+    top: 75px;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+fieldset#rsform_45_page_0 {
+    /*width: 1024px;*/
+    margin: auto;
+}
+

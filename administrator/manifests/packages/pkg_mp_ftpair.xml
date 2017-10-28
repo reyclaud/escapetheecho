@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="2.5">
+    <name>MyPuzzle - Find The Pair - Package</name>
+    <author>Thomas Seidel</author>
+    <creationDate>February 2013</creationDate>
+    <packagename>mp_ftpair</packagename>
+    <version>2.0.0</version>
+    <url>http://mypuzzle.org/</url>
+    <packager>mypuzzle.org</packager>
+    <packagerurl>http://blog.mypuzzle.org/downloads/joomla/pkg_mp_ftpair.zip</packagerurl>
+    <description>Mypuzzle Find The Pair | A Memory Game Extension - Fast and easy integration of find the pair memory games into your joomla website.</description>
+    <update>http://blog.mypuzzle.org/downloads/joomla/pkg_mp_ftpair.zip</update>
+    <files folder="packages">
+        <file type="component" id="com_mp_ftpair" >com_mp_ftpair.zip</file>
+        <file type="module" id="mod_mp_ftpair" client="site">mod_mp_ftpair.zip</file>
+    </files>
+</extension>

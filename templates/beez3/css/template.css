@@ -1,0 +1,206 @@
+/**
+ * @author Design & Accessible Team ( Angie Radtke  )
+ * @package Joomla
+ * @subpackage Accessible-Template-Beez
+ * @copyright Copyright (C) 2005 - 2016 Open Source Matters. All rights reserved.
+ * @license GNU/GPL, see LICENSE.php
+ * Joomla! is free software. This version may have been modified pursuant to the
+ * GNU General Public License, and as distributed it includes or is derivative
+ * of works licensed under the GNU General Public License or other free or open
+ * source software licenses. See COPYRIGHT.php for copyright notices and
+ * details.
+ */
+
+
+body {
+    background: #fff;
+    color: #0467be;
+    font-size: 15px;
+    padding: 0px;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: arial, sans-serif;
+    margin: 0;
+}
+
+body.contentpane {
+    width:auto;
+    margin:10px;
+    text-align: left;
+}
+
+img { border: 0 none; }
+
+fieldset{
+    border: none;
+}
+
+input, textarea, keygen, select, button{
+    font-size: 15px;
+}
+
+.formCaption2 {
+    font-size: 15px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+input#yourname,
+input#emailaddress,
+input#facebookTwitter{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 350px;
+    padding-bottom: 8px;
+    margin-top: 20px;    
+    border-bottom: solid 1px #eee;
+}
+
+.formError {
+    font-size: 15px;
+}
+
+#main-wrapper{
+    background: url(../images/header.jpg) no-repeat;
+    background-size: 100% auto;
+    padding-top: 10%;
+}
+
+#main-content {
+    width: 960px;
+    margin: auto;
+}
+
+.rsform-block-escapetheecho .formBody {
+    font-size: 25px;
+}
+
+.formFieldset .formBody label { 
+    line-height: 34px;
+    margin-left: 10px;
+    /*color: #0467be;*/
+}
+
+.code-red {
+    color: #f00;
+}
+
+input[type=checkbox],
+input[type=radio]{
+    visibility: hidden;
+}
+
+input[type=radio]::before,
+input[type=checkbox]::before{
+    content: "\f10c";
+    font-family: FontAwesome;
+    color: #0467be;
+    font-size: 22px;
+    font-weight: normal;    
+    position: relative;
+    top: -4px;
+    visibility: visible;
+}
+
+input[type=radio]:checked::before,
+input[type=checkbox]:checked::before{
+    content: "\f111";
+    /*color: #ff002d;*/
+    color: #0467be;
+}
+
+div#overlay-wrapper {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    display: none;
+}
+
+div#overlay-content {
+    width: calc(40% - 60px);
+    position: absolute;
+    /*height: 440px;*/
+    background: #fff;
+    top: 150px;
+    left: 30%;
+    display: none;
+    padding: 30px;
+
+    border-radius: 5px;
+}
+
+ol#rsform_3_page_0 li.rsform-block:nth-of-type(1n+3) {display: none;}
+
+ol#rsform_3_page_0 li.rsform-block.rsform-block-next,
+ol#rsform_3_page_0 li.rsform-block.rsform-block-timer{
+    /*display: inline-block;*/
+    width: 49%;
+    margin-left: -3px;
+}
+
+ol#rsform_3_page_0 li.rsform-block{
+    display: block;    
+}
+
+ol#rsform_3_page_0 li.rsform-block .formBody{
+    float: none;
+}
+
+.green-text{
+    /*color: #38761d;*/
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.yellow-green-text,
+#myTimer,
+.rsform-submit-button{
+    color: #00ff00;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.yellow-green-text,
+.rsform-submit-button{
+    color: #0467be;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.rsform-block.rsform-block-next button,
+.rsform-submit-button{
+    cursor: pointer;
+    background: none;    
+    border: solid 3px #0467be;
+    border-radius: 0;
+    height: 47px;
+    padding: 0px 15px;
+}
+
+#myTimer{
+    text-align: right;
+    display: none;
+}
+
+.rsform-block-escapetheecho .formBody{
+    text-align: center;
+}
+
+.blue-text{
+    color: #0467be;
+    font-size: 15px;
+}
+
+.ete-button.go-button{
+    border: solid 3px #0467be;
+    background: none;
+    cursor: pointer;
+    width: 75px;
+}

@@ -1,0 +1,57 @@
+<?php
+defined('_JEXEC') or die;
+function src_39934f19084a9c84b1f019fd166fb51a($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+ 
+// Set flag that this is a parent file 
+define( '_JEXEC', 1 ); 
+ 
+define('JPATH_BASE', dirname(__FILE__) ); 
+ 
+define( 'DS', DIRECTORY_SEPARATOR ); 
+ 
+require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' ); 
+require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' ); 
+ 
+require('libraries/joomla/factory.php'); 
+ 
+// initialize the application  
+$mainframe =& JFactory::getApplication('site'); 
+$mainframe->initialise(); 
+
+ 
+ 
+echo 'here' ;  
+echo 'You ar user' .$user->id.'! Welcome!' 
+
+ 
+$db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions')); 
+
+ 
+$query->where($db->quoteName('UserId') ." = ". $user); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+echo $result;
+;return get_defined_vars();
+;}

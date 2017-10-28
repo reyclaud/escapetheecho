@@ -1,0 +1,162 @@
+.flip-container{
+    float: none;
+    display: inline-block;
+    width: calc(12% - 7.5px);
+    min-height: 180px;
+}
+
+.front {
+    background: #fff url(../images/world.png) no-repeat;
+    background-size: 95%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+}
+
+div.flip-container:nth-child(5) .front,
+div.flip-container:nth-child(5).back,
+div.flip-container:nth-child(6) .front,
+div.flip-container:nth-child(6).back,
+div.flip-container:nth-child(7) .front,
+div.flip-container:nth-child(7).back,
+div.flip-container:nth-child(8) .front,
+div.flip-container:nth-child(8).back,
+div.flip-container:nth-child(9) .front,
+div.flip-container:nth-child(9).back,
+div.flip-container:nth-child(5),
+div.flip-container:nth-child(6),
+div.flip-container:nth-child(7),
+div.flip-container:nth-child(8),
+div.flip-container:nth-child(9){
+    margin-bottom: 5px;    
+}
+
+.flip-container.zoomin{
+    z-index: 99999;
+}
+
+.match-wrap button,
+.start-button-wrap button{
+    /* visibility: hidden; */
+    cursor: pointer;
+    border-radius: 0;
+    background: #ff0000;
+    border: solid 1px #c30202;
+    border-radius: 15px;
+}
+
+.number-moves div {
+    width: 33%;
+    float: left;
+}
+.number-moves div.number-moves-counter {
+    width: 22%;
+}
+
+.number-moves div.match-wrap {
+    width: 10%;
+    float: right;
+    left: -35px;
+    position: relative;
+    top: -3px;
+}
+
+.number-moves { 
+    margin-top: 18px;
+    margin-bottom: 5px;
+}
+
+div#overlay-wrap {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: #000;
+    top: 0;
+    opacity: 0.5;
+}
+
+div#overlay-content {
+    position: fixed;
+    top: 100px;
+    z-index: 9999;
+    background: #fff;
+    width: 600px;
+    margin: auto;
+    left: calc(50% - 300px);    
+    padding: 20px;
+    border-radius: 13px;
+    padding-bottom: 30px;
+}
+
+.pair-button-wrap{
+    width: auto;
+    margin-top: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+div#paired-text,
+.pair-button-wrap{
+    line-height: 32px;
+}
+
+.start-button-wrap {
+    text-align: center;
+}
+
+.start-button-wrap button {
+    background: #3aa3c8;
+    color: #fff;
+    border: solid 1px #1099ca;
+    padding: 0px 16px;
+}
+
+.start-button-wrap button span{
+    line-height: 30px;
+    text-transform: capitalize;
+    font-size: 23px;
+    font-weight: bold;
+}
+.scroll-arrows {
+    width: 80px;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    z-index: 999;    
+}
+
+button.up-down-btn{
+    background: url(../images/arrow-up-bw.png) center no-repeat;
+    width: 100%;
+    height: 92px;
+    border: none;
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.arrow-down-wrap button.visible,
+.arrow-up-wrap button.visible{
+    background: url(../images/arrow-up.png) center no-repeat;
+    width: 100%;
+    height: 92px;
+    background-size: 100%;
+}
+
+button.up-down-btn span{
+    visibility: hidden;
+}
+
+.arrow-down-wrap{
+    margin-top: 5px;
+
+}
+
+.arrow-down-wrap button{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+
+div#paired-text{
+    text-align: left;
+}

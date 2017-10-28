@@ -1,0 +1,71 @@
+<?php
+defined('_JEXEC') or die;
+function src_9624e89073ae79bdd659e7adfe7e1ecf($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+ 
+echo 'here' ;  
+echo 'You ar user' .$user->id.'! Welcome!' 
+
+ 
+define( '_JEXEC', 1 ); 
+
+ 
+        define( 'DS', DIRECTORY_SEPARATOR ); 
+
+ 
+        define( 'JPATH_BASE', realpath(dirname(__FILE__).DS.'..' )); 
+
+ 
+  
+
+ 
+  
+
+ 
+        require_once ( JPATH_BASE .DS.'includes'.DS.'defines.php' ); 
+
+ 
+        require_once ( JPATH_BASE .DS.'includes'.DS.'framework.php' ); 
+
+ 
+  
+
+ 
+  
+
+ 
+        $mainframe = JFactory::getApplication('site'); 
+
+ 
+$db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions')); 
+
+ 
+$query->where($db->quoteName('UserId') ." = ". $user); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+echo $result;
+;return get_defined_vars();
+;}

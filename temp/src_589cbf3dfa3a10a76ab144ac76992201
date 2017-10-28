@@ -1,0 +1,64 @@
+<?php
+defined('_JEXEC') or die;
+function src_589cbf3dfa3a10a76ab144ac76992201($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+$user = JFactory::getUser()->id; 
+            $db = JFactory::getDbo(); 
+  
+            // Create a new query object. 
+            $query = $db->getQuery(true);  
+         
+            $query->select('*'); 
+            $query->from($db->quoteName('jos_rsform_submissions')); 
+            $query->where($db->quoteName('UserId') ." = ".$user); 
+            $db->setQuery($query,0,1); 
+            $result = $db->loadObjectList(); 
+            /*$db->setQuery($query); 
+            $results = $db->loadObjectList();*/ 
+            //print_r($result); 
+ 
+            foreach($result as $key=>$value){ 
+                $a = "coinsWon"; 
+                $query2 = $db->getQuery(true);  
+                 
+                $quiz = ($value->FormId == '61' ? 'Power & Politics' : ''); 
+ 
+                $query2->select($db->quoteName('FieldValue')) 
+                ->from($db->quoteName('jos_rsform_submission_values')) 
+                ->where($db->quoteName('FormId') ." = ".$value->FormId) 
+                ->where($db->quoteName('SubmissionId') ." = ".$value->SubmissionId) 
+                        ->where($db->quoteName('FieldName') . '="coinsWon"'); 
+                 
+                $db->setQuery($query2,0,1); 
+                $result2 = $db->loadResult(); 
+                 
+ 
+                $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; 
+                 
+                if($actual_link == 'http://escapetheecho.org/profile' || $actual_link == 'http://escapetheecho.org/profile/'){ 
+                    print_r(" 
+
+ 
+                <div class='score-card'> 
+
+ 
+                 
+
+ 
+                <div class = 'points' style='float:right;'><b>".$quiz.":"</b>. $result2 . " echoos coins </div> 
+
+ 
+                </div> 
+
+ 
+                "); 
+                } 
+                 
+            };
+;return get_defined_vars();
+;}

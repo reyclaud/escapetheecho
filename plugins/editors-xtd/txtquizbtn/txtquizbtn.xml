@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="editors-xtd" method="upgrade">
+	<name>Button - txtQuiz</name>
+	<author>Kevin Olson</author>
+	<creationDate>Sept 2015</creationDate>
+	<copyright>Copyright (C) 2015 Kevin Olson. All rights reserved.</copyright>
+	<license>GPL</license>
+	<authorEmail>kevin@txtlearn.com</authorEmail>
+	<authorUrl>www.webdev.txtlearn.com</authorUrl>
+	<version>1.1</version>
+	<description>Enable this plugin and use to insert txtQuiz Questions into your content.</description>
+	<files>
+		<filename plugin="txtquizbtn">txtquizbtn.php</filename>
+		<filename>insert.php</filename>
+		<filename>helper.css</filename>
+		<filename>insert.png</filename>
+		<filename>txtquizbtn.xml</filename>
+		<filename>stuff.js</filename>
+	</files>
+</extension>

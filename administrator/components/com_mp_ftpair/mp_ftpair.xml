@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>com_mp_ftpair</name>
+	<creationDate>February 2013</creationDate>
+	<copyright>(c)2013 mypuzzle.org - All rights reserved</copyright>
+	<authorUrl>mypuzzle.org</authorUrl>
+        <author>tom@mypuzzle.org</author>
+	<license>GNU/GPL</license>
+	<version>2.0.0</version>
+	<description>COM_MP_FTPAIR_XML_DESCRIPTION</description>
+
+        <!-- Alle Ordner und Hauptdateien die (beim Deinstallieren) zu entfernen sind -->
+	<files folder="site">
+            <filename>mp_ftpair.php</filename>
+            <filename>controller.php</filename>
+            <filename>index.html</filename>
+            <folder>models</folder>
+            <folder>views</folder>
+	</files>
+        <administration>
+            <!-- Einträge im Admin-Menü -->
+            <menu img="class:component">COM_MP_FTPAIR</menu>
+
+            <!-- Alle Ordner und Hauptdateien die (beim Deinstallieren) zu entfernen sind -->
+            <files folder="admin">
+            </files>
+
+	</administration>
+
+
+</extension>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <extension type="package" version="3.1" method="upgrade">
+ <name>txtQuiz Package</name>
+ <author>Kevin Olson</author>
+ <creationDate>Sept 2015</creationDate>
+ <packagename>txtquiz</packagename>
+ <version>1.22.1</version>
+ <url>http://webdev.txtlearn.com</url>
+ <packager>WebDev txtLearn</packager>
+ <packagerurl>http://webdev.txtlearn.com</packagerurl>
+ <description>Package contains content plugin and editor button for txtQuiz. Please enable both of these plugins with the plugin manager to use. If you like this extension please consider donating five dollars!</description>
+ <files folder="packages">
+   <file type="plugin" id="txtquiz" group="system">plg_content_txtquiz_1.22.1.zip</file>
+   <file type="plugin" id="txtquizbtn" group="system">plg_editors-xtd_txtquizbtn_1.1.zip</file>
+ </files>
+ </extension>

@@ -1,0 +1,2 @@
+<?php //namespace modules\mod_instantfblogin/** * @package INSTANTFBLOGIN::modules * @subpackage mod_instantfblogin_comments * @author Joomla! Extensions Store * @copyright (C) 2015 - Joomla! Extensions Store * @license GNU/GPLv2 http://www.gnu.org/licenses/gpl-2.0.html */
+defined('_JEXEC') or die;?><div class="fb-comments" 	 data-width="<?php echo $widgetWidth;?>" 	 data-href="<?php echo $widgetHref;?>" 	 data-numposts="<?php echo $widgetNumPosts;?>" 	 data-colorscheme="<?php echo $widgetColorScheme;?>"	 data-order-by="<?php echo $widgetOrderBy;?>"></div>

@@ -1,0 +1,72 @@
+<?php
+defined('_JEXEC') or die;
+function src_51cc6aa74b372a96ba1b897b76f1b8c8($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+  
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query = $db->getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions','a')); 
+
+ 
+$query->where($db->quoteName('a.UserId') ." = ". "'".$user->id."'"); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObject(); 
+
+ 
+print_r($result) 
+
+ 
+ $query4 = $db->getQuery(true); 
+
+ 
+$query4->select('*'); 
+
+ 
+$query4->from($db->quoteName('jos_rsform_submission_values')); 
+
+ 
+$query4->where($db->quoteName('FormId') ." = ". "'". $result->FormId."'"); 
+
+ 
+$query4->where($db->quoteName('SubmissionId') ." = ". $result->SubmissionId); 
+
+ 
+$db->setQuery($query4); 
+
+ 
+$result4 = $db->loadObjectList(); 
+
+ 
+foreach($result4 as $value2){ 
+
+ 
+echo $value2->FieldName ."-". $value2->FieldValue; 
+
+ 
+echo "<br>"; 
+
+ 
+};
+;return get_defined_vars();
+;}

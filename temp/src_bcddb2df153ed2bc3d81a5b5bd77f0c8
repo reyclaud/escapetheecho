@@ -1,0 +1,42 @@
+<?php
+defined('_JEXEC') or die;
+function src_bcddb2df153ed2bc3d81a5b5bd77f0c8($src_variables){
+$app = $mainframe = JFactory::getApplication();
+$document = $doc = JFactory::getDocument();
+$database = $db = JFactory::getDbo();
+$user = JFactory::getUser();
+$Itemid = $app->input->getInt('Itemid');
+if (is_array($src_variables)) {foreach ($src_variables as $src_key => $src_value) {${$src_key} = $src_value;}}
+// You can place PHP like this 
+
+ 
+  
+
+ 
+ $db = JFactory::getDbo(); 
+
+ 
+$query = $db-&amp;gt;getQuery(true); 
+
+ 
+$query->select('*'); 
+
+ 
+$query->from($db->quoteName('jos_rsform_submissions','a')); 
+
+ 
+$query->join('LEFT', $db->quoteName('jos_rsform_submissions', 'b') . ' ON (' . $db->quoteName('a.id') . ' = ' . $db->quoteName('b.SubmissionId') . ')') 
+
+ 
+$query->where($db->quoteName('UserId') ." = ". $user->id); 
+
+ 
+$db->setQuery($query,0,1); 
+
+ 
+$result = $db->loadObjectList(); 
+
+ 
+print_r($result);
+;return get_defined_vars();
+;}
